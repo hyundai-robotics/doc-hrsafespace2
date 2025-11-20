@@ -15,3 +15,12 @@
 2. HRSpace4가 설치된 폴더에서 Library/Etc/에 SafeSpace2/ 폴더를 생성한 후, 그 안에 파일들을 붙여넣기 합니다.
 
    ![](../_assets/ch05_15_plugin_install2.PNG)
+
+
+{% hint style="info" %}
+
+플러그인 설치 후 HRSpace4를 처음 실행할 때, 혹시 아래와 같은 대화상자가 나타난다면 구성이 완료될 때까지 잠시 기다려 주십시오.
+
+   ![](../_assets/ch05_18_plugin_install3.PNG)
+
+{% endhint %}

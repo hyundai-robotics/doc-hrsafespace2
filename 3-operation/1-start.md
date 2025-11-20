@@ -7,3 +7,14 @@
 2. HRSafeSpace2가 실행됩니다.
 
    ![](../_assets/ch03_20_hrsafespace2.PNG)
+
+
+{% hint style="info" %}
+
+혹시 실행에 실패한다면, 아래 파일을 설치한 후 다시 시도해 보십시오.
+
+```cmd
+C:/Program Files/HHI Robotics/HRSafeSpace2/vc_redist.x64.exe
+```
+
+{% endhint %}
