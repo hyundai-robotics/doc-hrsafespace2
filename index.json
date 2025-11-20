@@ -95,43 +95,43 @@
 		"byte_ofs": 12905
 	},
 	{
-		"link": "5-hrspace/4-cell-working.md",
+		"link": "5-hrspace/4-space-working.md",
 		"char_ofs": 7868,
 		"byte_ofs": 13891
 	},
 	{
-		"link": "5-hrspace/5-cell-protective.md",
-		"char_ofs": 9543,
-		"byte_ofs": 16945
+		"link": "5-hrspace/5-space-protective.md",
+		"char_ofs": 9600,
+		"byte_ofs": 17080
 	},
 	{
 		"link": "5-hrspace/6-robot-link.md",
-		"char_ofs": 10705,
-		"byte_ofs": 19090
+		"char_ofs": 10731,
+		"byte_ofs": 19232
 	},
 	{
 		"link": "5-hrspace/7-tool.md",
-		"char_ofs": 11419,
-		"byte_ofs": 20315
+		"char_ofs": 11446,
+		"byte_ofs": 20458
 	},
 	{
 		"link": "5-hrspace/8-tool-orient.md",
-		"char_ofs": 12250,
-		"byte_ofs": 21808
+		"char_ofs": 12278,
+		"byte_ofs": 21952
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 13209,
-		"byte_ofs": 23378
+		"char_ofs": 13238,
+		"byte_ofs": 23523
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 13220,
-		"byte_ofs": 23401
+		"char_ofs": 13249,
+		"byte_ofs": 23546
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 13440,
-		"byte_ofs": 23799
+		"char_ofs": 13469,
+		"byte_ofs": 23944
 	}
 ]

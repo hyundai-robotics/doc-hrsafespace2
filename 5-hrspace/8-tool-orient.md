@@ -5,7 +5,7 @@
 (시험 및 설명의 편의를 위해, 이전 절에 실습한 tool 형상은 삭제했으며, 스폿 용접 건 툴은 스타일 - 투명도를 60%로 조정했습니다.)
 
 
-1. 확장 속성에서 `space/tool_orients`를 선택합니다. 각도 편차를 60 deg로 입력한 후 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면 로봇 프렌지 좌표계에 원뿔 모양의 툴 방향 범위가 표시됩니다.
+1. 확장 속성에서 `layout/tool_orients`를 선택합니다. 각도 편차를 60 deg로 입력한 후 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면 로봇 프렌지 좌표계에 원뿔 모양의 툴 방향 범위가 표시됩니다.
 
    ![](../_assets/ch05_76_tool_orient.PNG)
 
