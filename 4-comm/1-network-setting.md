@@ -11,9 +11,7 @@
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 `IP 주소 설정` 버튼을 클릭하십시오.
-
-   ![](../_assets/toolbar_ipaddr.PNG)
+   혹은 툴 바에서 ![](../_assets/toolbar_ipaddr.PNG) 버튼을 클릭하십시오. 
 
 
 4. PC측과 로봇 제어기(Hi7) 측의 IP 주소를 각각 입력하고 `확인` 버튼을 클릭하십시오.
