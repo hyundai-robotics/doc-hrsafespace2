@@ -9,7 +9,7 @@ Let’s designate the area where a human operator can stand as a protected space
    ![](../_assets/ch05_40_view_up.PNG)
 
 
-2. In Extended Properties, select `layout/spaces/space 1`.
+2. In Extension Properties, select `layout/spaces/space 1`.
 On the General tab, set the `Activation` option to `Always On`.
    The settings should match the figure below:
 

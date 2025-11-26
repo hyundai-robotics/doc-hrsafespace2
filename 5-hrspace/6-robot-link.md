@@ -2,7 +2,7 @@
 
 You can apply capsule volumes to the robot's upper_frame and arm_frame to prevent collisions.
 
-1. In Extended Properties, select `layout/robot`.
+1. In Extension Properties, select `layout/robot`.
    Modify Link 3 and Link 2 as follows, then click the ![](../_assets/toolbar_save.PNG) button. Capsules will appear at the positions of the two links.
 
    - Link 3 (Vertical)
@@ -25,6 +25,6 @@ You can apply capsule volumes to the robot's upper_frame and arm_frame to preven
 
 
 3. Select the capsule for Link 2 and adjust its size and position in the same way to fully enclose Link 2.
-   Changes made with the gizmo are immediately reflected in the Extended Properties dialog.
+   Changes made with the gizmo are immediately reflected in the Extension Properties dialog.
 
    ![](../_assets/ch05_68_link_gizmo3.PNG)

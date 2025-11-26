@@ -10,4 +10,4 @@
 * When you select a specific item in the tree, the corresponding configuration screen appears on the right.
 
 * At the bottom, the log window displays various errors and messages.
-Clicking the `Clear Log` button on the right side of the log window clears the log entries.
+Clicking the `clear log` button on the right side of the log window clears the log entries.

@@ -6,7 +6,7 @@ If you want to limit the direction that the robot tool points within a specific 
 (For demonstration purposes, the tool shapes from the previous section have been removed, and the spot welding gun tool's transparency is set to 60% via `Style - Transparency`.)
 
 
-1. In Extended Properties, select `layout/tool_orient`.
+1. In Extension Properties, select `layout/tool_orient`.
    Enter an angular deviation of 60°, then click the [](../_assets/toolbar_save.PNG) button. A cone-shaped tool orientation range will appear in the robot flange coordinate system.
 
    ![](../_assets/ch05_76_tool_orient.PNG)

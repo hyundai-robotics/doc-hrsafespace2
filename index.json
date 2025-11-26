@@ -6,132 +6,132 @@
 	},
 	{
 		"link": "1-preface/README.md",
-		"char_ofs": 275,
-		"byte_ofs": 523
+		"char_ofs": 525,
+		"byte_ofs": 545
 	},
 	{
 		"link": "1-preface/1-intro.md",
-		"char_ofs": 370,
-		"byte_ofs": 708
+		"char_ofs": 696,
+		"byte_ofs": 722
 	},
 	{
 		"link": "1-preface/2-prerequisite.md",
-		"char_ofs": 1043,
-		"byte_ofs": 1968
+		"char_ofs": 1844,
+		"byte_ofs": 1895
 	},
 	{
 		"link": "2-install/README.md",
-		"char_ofs": 1393,
-		"byte_ofs": 2493
+		"char_ofs": 2346,
+		"byte_ofs": 2410
 	},
 	{
 		"link": "3-operation/README.md",
-		"char_ofs": 1819,
-		"byte_ofs": 3225
+		"char_ofs": 2970,
+		"byte_ofs": 3058
 	},
 	{
 		"link": "3-operation/1-start.md",
-		"char_ofs": 2047,
-		"byte_ofs": 3699
+		"char_ofs": 3351,
+		"byte_ofs": 3451
 	},
 	{
 		"link": "3-operation/2-screen-layout.md",
-		"char_ofs": 2241,
-		"byte_ofs": 4000
+		"char_ofs": 3862,
+		"byte_ofs": 3985
 	},
 	{
 		"link": "3-operation/3-setting.md",
-		"char_ofs": 2496,
-		"byte_ofs": 4537
+		"char_ofs": 4357,
+		"byte_ofs": 4496
 	},
 	{
 		"link": "3-operation/4-open-save.md",
-		"char_ofs": 2832,
-		"byte_ofs": 5219
+		"char_ofs": 5027,
+		"byte_ofs": 5183
 	},
 	{
 		"link": "4-comm/README.md",
-		"char_ofs": 3417,
-		"byte_ofs": 6262
+		"char_ofs": 5811,
+		"byte_ofs": 5989
 	},
 	{
 		"link": "4-comm/1-network-setting.md",
-		"char_ofs": 3511,
-		"byte_ofs": 6470
+		"char_ofs": 5969,
+		"byte_ofs": 6154
 	},
 	{
 		"link": "4-comm/2-password.md",
-		"char_ofs": 3941,
-		"byte_ofs": 7188
+		"char_ofs": 6568,
+		"byte_ofs": 6772
 	},
 	{
 		"link": "4-comm/3-download.md",
-		"char_ofs": 4951,
-		"byte_ofs": 8987
+		"char_ofs": 8009,
+		"byte_ofs": 8258
 	},
 	{
 		"link": "4-comm/4-upload.md",
-		"char_ofs": 5274,
-		"byte_ofs": 9508
+		"char_ofs": 8452,
+		"byte_ofs": 8720
 	},
 	{
 		"link": "5-hrspace/README.md",
-		"char_ofs": 5490,
-		"byte_ofs": 9839
+		"char_ofs": 8751,
+		"byte_ofs": 9034
 	},
 	{
 		"link": "5-hrspace/1-install-plugin.md",
-		"char_ofs": 6465,
-		"byte_ofs": 11671
+		"char_ofs": 10243,
+		"byte_ofs": 10561
 	},
 	{
 		"link": "5-hrspace/2-load-plugin.md",
-		"char_ofs": 6831,
-		"byte_ofs": 12181
+		"char_ofs": 10976,
+		"byte_ofs": 11325
 	},
 	{
 		"link": "5-hrspace/3-open-save-in-plugin.md",
-		"char_ofs": 7292,
-		"byte_ofs": 12905
+		"char_ofs": 11636,
+		"byte_ofs": 12006
 	},
 	{
 		"link": "5-hrspace/4-space-working.md",
-		"char_ofs": 7868,
-		"byte_ofs": 13891
+		"char_ofs": 12497,
+		"byte_ofs": 12896
 	},
 	{
 		"link": "5-hrspace/5-space-protective.md",
-		"char_ofs": 9600,
-		"byte_ofs": 17080
+		"char_ofs": 15229,
+		"byte_ofs": 15704
 	},
 	{
 		"link": "5-hrspace/6-robot-link.md",
-		"char_ofs": 10731,
-		"byte_ofs": 19232
+		"char_ofs": 17023,
+		"byte_ofs": 17553
 	},
 	{
 		"link": "5-hrspace/7-tool.md",
-		"char_ofs": 11446,
-		"byte_ofs": 20458
+		"char_ofs": 18068,
+		"byte_ofs": 18632
 	},
 	{
 		"link": "5-hrspace/8-tool-orient.md",
-		"char_ofs": 12278,
-		"byte_ofs": 21952
+		"char_ofs": 19183,
+		"byte_ofs": 19786
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 13238,
-		"byte_ofs": 23523
+		"char_ofs": 20603,
+		"byte_ofs": 21251
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 13249,
-		"byte_ofs": 23546
+		"char_ofs": 20622,
+		"byte_ofs": 21278
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 13469,
-		"byte_ofs": 23944
+		"char_ofs": 21081,
+		"byte_ofs": 21745
 	}
 ]

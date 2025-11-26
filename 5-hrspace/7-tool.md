@@ -3,7 +3,7 @@
 
 You can apply various-shaped volumes to the robot's tool to prevent collisions.
 
-1. In Extended Properties, select `layout/tools/tool0`. Each tool can combine up to 10 models.
+1. In Extension Properties, select `layout/tools/tool0`. Each tool can combine up to 10 models.
 First, set Model 0 as follows, then click the  ![](../_assets/toolbar_save.PNG) button.
    The shape will appear in the robot flange coordinate system.
 
@@ -17,7 +17,7 @@ First, set Model 0 as follows, then click the  ![](../_assets/toolbar_save.PNG) 
 
 
 2. Use the Gizmo to move, rotate, and scale Model 0 so that it fully encloses the tool.
-   Changes made with the gizmo are immediately reflected in the Extended Properties dialog.
+   Changes made with the gizmo are immediately reflected in the Extension Properties dialog.
 
    ![](../_assets/ch05_72_tool_tool2.PNG)
 

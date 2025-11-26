@@ -1,294 +1,323 @@
-﻿# Hi7 로봇제어기 기능설명서 - HRSafeSpace2
+﻿# Hi7 Robot Controller Function Manual - HRSafeSpace2
 
 {% hint style="warning" %}
-본 제품 설명서에서 제공되는 정보는 HD현대로보틱스의 자산입니다.
+The information presented in this manual is the property of HD Hyundai Robotics.
 
-HD현대로보틱스의 서면에 의한 동의 없이 전부 또는 일부를 무단 전재 및 재배포할 수 없으며, 제3자에게 제공되거나 다른 목적에 사용할 수 없습니다.
+The manual may neither be copied, in part or in full, nor redistributed without prior written consent from HD Hyundai Robotics.
+
+It may neither be provided to any third party nor used for any other purposes.
 
 
-
-본 설명서는 사전 예고 없이 변경될 수 있습니다.
-
+HD Hyundai Robotics reserves the right to modify this document without prior notification.
 
 
 **Copyright ⓒ 2025 by HD Hyundai Robotics**
 {% endhint %}
-# 1. 개요
+# 1. Preface
 
-이 문서는 HD현대로보틱스 Hi7 제어기 SafeSpace2.0 기능의 PC용 설정 유틸리티인 HRSafeSpace2 애플리케이션의 사용법을 설명합니다.
-# 1.1 소개
-
-HD현대로보틱스의 Hi7 제어기는 IEC 61508 Functional safety 표준을 준수하는 안전 기능 SafeSpace v2.0이 탑재되어 있습니다.
-로봇 시스템의 오조작, 오동작, 고장 시, 사람의 신체를 보호하는 것이 이 기능의 목적입니다.
-
-Hi7 제어기의 SafeSpace2.0 기능의 설정은 아래의 3가지 방법 중 하나로 수행할 수 있습니다.
-
-  * TP630 티치펜던트 (산업용TP)
-  * TP640 티치펜던트 (태블릿TP)
-  * HRSafeSpace2 애플리케이션 (윈도우 데스크탑 PC용 애플리케이션)
-
-SafeSpace v2.0의 각 설정화면은 위 3가지 디바이스에 동일하게 탑재되어 있습니다. 
-
-본 설명서는 설명화면들에 대해서는 설명하지 않으며, 아래 내용들만을 설명합니다.
-
-  * HRSafeSpace2 애플리케이션의 설치 방법
-  * HRSafeSpace2의 화면 구성과 기본적인 조작 방법
-  * HRSafeSpace2를 HRSpace4와 연동하여 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집할 수 있는 기능
-
-각각의 설정화면들에 대한 내용은 [SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/korean/README)를 참고하십시오.
-# 1.2 사전 지식 (prerequisite)
+This document describes how to use HRSafeSpace2, the PC-based configuration utility for the SafeSpace 2.0 feature of the HD Hyundai Robotics Hi7 controller.
+# 1.1 Introduction
 
 
-본 설명서는 아래 내용을 숙지하고 있는 사용자들을 위한 대상으로 합니다.
+The Hi7 controller from HD Hyundai Robotics is equipped with SafeSpace v2.0, a safety feature compliant with the IEC 61508 Functional Safety standard.
+This feature is designed to protect human operators in the event of misuse, malfunction, or failure of the robot system.
 
-  * [Hi6/Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/README)
+The SafeSpace 2.0 settings of the Hi7 controller can be configured using one of the following three methods:
 
-  * [SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/korean/README) ; 본 설명서를 먼저 학습해도 됩니다.
+  * TP630 Teach Pendant (industrial-type TP)
+  * TP640 Teach Pendant (tablet-type TP)
+  * HRSafeSpace2 Application (Windows desktop PC application)
 
-  * HRSpace4 기능 설명서 (HRSpace4 도움말) ; HRSpace4 연동 시에만 필요합니다.
-  # 2. 설치
+All SafeSpace v2.0 configuration screens are identically provided across these three devices.
 
-- 필수 실행 환경
-  * 윈도우10 64bit 및 이후 버전
-  * 유선 이더넷 장치
+This manual does not describe the individual configuration screens. Instead, it covers the following topics:
 
-1. [HD현대로보틱스 다운로드 페이지](https://www.hd-hyundairobotics.com/download-center/list)에 접속하여 제품명에서 HRSafeSpace2를 검색하여 다운로드 받으십시오.
-(다운로드를 위해서는 회원가입과 로그인이 필요합니다.)
+  * How to install the HRSafeSpace2 application
+  * Screen layout and basic operation of HRSafeSpace2
+  * How to link HRSafeSpace2 with HRSpace4 to visually edit safety layouts within a 3D virtual workspace
+
+For detailed information on each configuration screen, please refer to the
+[SafeSpace 2.0 Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/english/README).
+# 1.2 Prerequisite
 
 
-2. 다운로드한 zip 파일을 임의의 폴더에 풀어놓고 setup.exe를 실행하십시오.
+This manual is intended for users who are already familiar with the following materials:
+
+  * [Hi6/Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/README)
+
+  * [SafeSpace 2.0 Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/english/README) : You may read this manual first if preferred.
+
+  * HRSpace4 Function Manual (HRSpace4 Help) : Required only when using HRSafeSpace2 in conjunction with HRSpace4.
+  # 2. Installation
+
+- Required Environment
+  * Windows 10 64-bit or later
+  * Wired Ethernet interface
+
+1. Visit the [HD Hyundai Robotics Download Center](https://www.hd-hyundairobotics.com/en/download-center/list) and search for HRSafeSpace2 under `search` to download the installer.
+(A user account and login are required to download files.)
 
 
-3. `Next >` 버튼을 클릭하면서 진행하십시오.
+2. Extract the downloaded ZIP file to any folder and run setup.exe.
+
+
+3. Proceed by clicking the `Next >` button.
    
 	![](../_assets/ch01_10_install.PNG)
 
 
-4. Complete 화면이 나오면 `Close` 버튼으로 설치를 종료하십시오. 
+4. When the Complete screen appears, click `Close` to finish the installation.. 
    
 	![](../_assets/ch01_14_install.PNG)
-# 3. 조작 방법
+# 3. Operation
 
-HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에 내장된 플러그인 (Plug-in) 형태로 실행 가능합니다.
 
-3장과 4장에서는 단독 애플리케이션의 실행 예로서 설명합니다. 이 내용은 플러그인 실행에서도 비슷하게 적용됩니다.
+HRSafeSpace2 can be run either as a stand-alone application or as a plug-in integrated within HRSpace.
 
-우선 3장에서는 HRSafeSpace2의 실행과 화면 구성, 설정 및 파일 저장과 불러오기에 대해 설명하겠습니다.
-# 3.1 실행 방법
+Chapters 3 and 4 describe the operation based on the stand-alone application.
+The same procedures apply similarly when running it as a plug-in.
 
-1. 윈도우 바탕화면, 혹은 시작버튼에서 HRSafeSpace2 아이콘을 클릭하십시오. _ko는 한글버전, _en은 영문버전입니다.
+This chapter explains how to launch HRSafeSpace2, its screen layout, and how to load and save configuration files.
+# 3.1 How to Launch the Application
+
+
+1. Click the HRSafeSpace2 icon on the Windows desktop or from the Start menu.
+The `_ko` icon launches the Korean version, and the `_en` icon launches the English version.
 
    ![](../_assets/ch03_10_start.PNG)
 
-2. HRSafeSpace2가 실행됩니다.
+2. HRSafeSpace2 will start.
 
-   ![](../_assets/ch03_20_hrsafespace2.PNG)# 3.2 화면 구성
+   ![](../_assets/ch03_20_hrsafespace2.PNG)
+
+{% hint style="info" %}
+
+If the application fails to start, install the following file and try again:
+
+```cmd
+C:/Program Files/HHI Robotics/HRSafeSpace2/vc_redist.x64.exe
+```
+
+{% endhint %}# 3.2 Screen Layout
+
 
 ![](../_assets/ch03_20_hrsafespace2.PNG)
 
-* 상단에는 제목막대와 풀다운 메뉴, 툴 바가 있습니다.
+* At the top, you will find the title bar, pull-down menus, and the toolbar.
 
-* 좌측에는 SafeSpace2의 각 설정 항목을 보여주는 트리창이 있습니다.
+* On the left side, a tree view displays all configuration items for SafeSpace2.
 
-* 트리창에서 특정한 설정 항목을 선택하면, 해당하는 설정 화면에 우측에 나타납니다.
+* When you select a specific item in the tree, the corresponding configuration screen appears on the right.
 
-* 하단에는 각종 에러나 메시지가 기록되는 로그창이 있습니다. 로그창 우측의 `로그 클리어` 버튼을 클릭하면 로그창이 비워집니다.
-# 3.3 SafeSpace2 설정
+* At the bottom, the log window displays various errors and messages.
+Clicking the `clear log` button on the right side of the log window clears the log entries.
+# 3.3 Configuring SafeSpace2
 
-- 트리창에서 설정할 항목을 선택한 후, 우측 화면에 값을 설정하십시오.
+
+- Select the item you want to configure in the tree view, and set the values on the right-hand screen.
 
   ![](../_assets/ch03_30_setting.PNG)
 
-- 트리창의 다른 항목을 선택하여 다른 화면으로 이동하더라도 입력한 값은 메모리에 보존됩니다. (즉, 다른 화면으로 이동하기 전에 저장할 필요 없습니다.)
+- Even if you select a different item in the tree and move to another screen, the values you entered are retained in memory.
+  (In other words, there is no need to save before switching screens.)
 
-- 허용한 범위 밖의 값을 입력한 경우, 다른 화면으로 이동을 시도할 경우 이동 실패하며, 하단의 로그 창에 잘못 입력한 값과 적법한 범위가 표시됩니다. 적법한 값으로 정정한 후, 이동하십시오.
+- If a value outside the allowed range is entered, attempting to switch to another screen will fail. The log window at the bottom displays the invalid value along with the valid range.
+  Correct the value to fall within the valid range before switching screens.
 
   ![](../_assets/ch03_40_range.PNG)
-# 3.4 저장과 불러오기
+# 3.4 Saving and Loading
 
-- 설정 내용을 저장하려면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 선택하십시오.
+
+- To save your configuration, select `File - Save` or `File - Save As...` from the menu.
 
   ![](../_assets/ch03_60_open_save.PNG)
-  
-  혹은 툴 바에서 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하십시오.  
-  
 
-- 저장 대화상자에서 원하는 폴더로 이동 후, 파일명을 입력하십시오. 설정 파일은 .json 포맷으로 저장됩니다.
+  Alternatively, click the Save button on the toolbar:
+
+- In the save dialog, navigate to the desired folder and enter a file name.
+Configuration files are saved in `.json` format.
 
   ![](../_assets/ch03_63_save.PNG)
 
-- HRSafeSpace2를 다시 실행했을 때, 저장된 파일을 불러오기하려면, `파일(F) - 열기(O)`  메뉴를 선택하십시오. 혹은 툴 바에서 ![](../_assets/toolbar_open.PNG) 버튼을 클릭하십시오.
+- To load a previously saved file after restarting HRSafeSpace2, select `File - Open` from the menu, or click the ![](../_assets/toolbar_open.PNG) button on the toolbar:
 
-- 저장했던 파일을 선택하면, 설정 내용이 화면에 로드됩니다.
+- Selecting the saved file will load the configuration into the application.
 
-- SafeSpace2의 설정을 디폴트 값으로 다시 시작하려면, `파일(F) - 새 파일(N)` 메뉴를 선택하면 됩니다. 혹은 툴 바에서 ![](../_assets/toolbar_new.PNG) 버튼을 클릭하십시오.
+- To reset SafeSpace2 settings to their default values, select `File - New` from the menu, or click the ![](../_assets/toolbar_new.PNG) button on the toolbar:
+# 4. Communication
 
-  # 4. 통신
 
-이번 장에서는 HRSafeSpace2를 Hi7 제어기와 연결하고, 암호를 설정하고, 설정한 내용을 다운로드하거나 업로드하는 방법에 대해 설명하겠습니다.
-# 4.1 네트워크 설정
+This chapter explains how to connect HRSafeSpace2 to the Hi7 controller, set a password, and download or upload the configured settings.
+# 4.1 Network Configuration
 
-1. HRSafeSpace2를 실행한 PC와 Hi7 제어기의 범용 이더넷 포트를 이더넷 케이블로 연결하십시오.
 
-2. PC측 네트워크 아답터의 IP주소는 Hi7 제어기와 같은 서브넷이어야 합니다.
+1. Connect the PC running HRSafeSpace2 to the Hi7 controller's general-purpose Ethernet port using an Ethernet cable.
+
+2. Ensure that the PC's network adapter IP address is on the same subnet as the Hi7 controller.
 
    ![](../_assets/ch04_05_network_adapter.PNG)
 
-
-3. `도구(T) - IP 주소 설정(A)` 메뉴를 선택하여, IP 주소 설정 대화상자를 여십시오.
-
-   ![](../_assets/ch04_00_tool_menu.PNG)
-
-   혹은 툴 바에서 ![](../_assets/toolbar_ipaddr.PNG) 버튼을 클릭하십시오. 
-
-
-4. PC측과 로봇 제어기(Hi7) 측의 IP 주소를 각각 입력하고 `확인` 버튼을 클릭하십시오.
-
-   ![](../_assets/ch04_10_ipaddr.PNG)
-# 4.2 패스워드
-
-SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도록, Hi7 제어기에 반드시 SafeSpace2 패스워드를 설정해야 합니다.
-
-## 아직 설정하지 않은 경우, 패스워드 설정 방법
-
-1. `도구(T) - 패스워드 변경(P)` 메뉴를 선택합니다.
+3. Open the IP Address Settings dialog by selecting `Tools - Set IP Address` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar-password.PNG) 버튼을 클릭하십시오.
+   Alternatively, click the ![](../_assets/toolbar_ipaddr.PNG) button on the toolbar:
+
+4. Enter the IP addresses for both the PC and the Hi7 controller, then click `OK`.
+# 4.2 Password
 
 
-2. 아래와 같은 대화상자가 나타나면, `새 패스워드`에 새로 설정할 암호를 입력하고 `패스워드 확인`에도 동일한 암호를 입력한 후, `변경(C)`을 클릭하십시오.
+To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to set a SafeSpace2 password on the Hi7 controller.
+
+
+## Setting a Password for the First Time
+
+1. Select `Tools - Change Password` from the menu.
+
+   ![](../_assets/ch04_00_tool_menu.PNG)
+
+   Alternatively, click the ![](../_assets/toolbar-password.PNG) button on the toolbar:
+
+2. When the dialog appears, enter the new password in `New Password` and re-enter the same password in `Confirm Password`, then click `Change`.
 
    ![](../_assets/ch04_20_ch_password.PNG)
 
-
-3. `완료` 메시지박스가 표시되면 성공한 것입니다.
+3. If the `Complete` message box appears, the password has been successfully set.
 
    ![](../_assets/msgbox_complete.PNG)
 
-
-4. `타임아웃 에러` 메시지박스가 표시되면 IP주소 설정이나 이더넷 케이블 연결, 혹은 Hi7 제어기가 정상적인 상황인지 등을 확인하십시오.
+4. If a `Timeout Error` message box appears, check the IP address settings, the Ethernet cable connection, or whether the Hi7 controller is functioning properly.
 
    ![](../_assets/ch04_30_timeout.PNG)
 
 
-## 설정되어 있는 상태에서, 패스워드 변경 방법
+## Changing an Existing Password
 
-1. `도구(T) - 패스워드 변경(P)` 메뉴를 선택합니다.
+1. Select `Tools - Change Password` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar-password.PNG) 버튼을 클릭하십시오.
+   Or click the ![](../_assets/toolbar-password.PNG) button on the toolbar:
 
-
-2. 아래와 같은 대화상자가 나타나면, `이전 패스워드`에 이전의 패스워드, `새 패스워드`에 새로 설정할 암호를 입력하고, `패스워드 확인`에도 새 패스워드와 동일한 암호를 입력한 후, `변경(C)`을 클릭하십시오.
+2. In the dialog, enter the current password in `Old Password`, the new password in `New Password`, and re-enter the new password in `Confirm Password`, then click `Change`.
 
    ![](../_assets/ch04_40_ch_password2.PNG)
 
-
-3. `완료` 메시지박스가 표시되면 성공한 것입니다.
+3. If the `Complete` message box appears, the password has been successfully changed.
 
    ![](../_assets/msgbox_complete.PNG)
-   
-# 4.3 다운로드
+# 4.3 Download
 
-1. `도구(T) - 다운로드(D)` 메뉴를 선택합니다.
+
+1. Select `Tools - Download` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar_download.PNG) 버튼을 클릭하십시오.
+   Alternatively, click the ![](../_assets/toolbar_download.PNG) button on the toolbar:
 
-
-2. 아래와 같은 대화상자가 나타나면, `패스워드`에 암호를 입력하고, `다운로드`를 클릭하십시오.
+2. When the dialog appears, enter the password in the `Password` field and click `Download`.
 
    ![](../_assets/ch04_50_download.PNG)
 
-
-3. `완료` 메시지박스가 표시되면 성공한 것입니다.
+3. If the `Complete` message box appears, the download was successful.
 
    ![](../_assets/ch04_60_download_ok.PNG)
-# 4.4 업로드
+# 4.4 Upload
 
-1. `도구(T) - 업로드(U)` 메뉴를 선택합니다.
+1. Select `Tools - Upload` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar_upload.PNG) 버튼을 클릭하십시오.
+   Alternatively, click the ![](../_assets/toolbar_upload.PNG) button on the toolbar:
 
 
-2. `완료` 메시지박스가 표시되면 성공한 것입니다.
+2. If the `Complete` message box appears, the upload was successful.
 
    ![](../_assets/msgbox_complete.PNG)
-# 5. HRSpace4 연동
+   # 5. HRSpace4 Integration
 
-이번 장에서는 HRSpace4 프로젝트에 HRSafeSpace2를 플러그인 (Plug-in) 형태로 로드하여, 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집하는 방법을 설명합니다.
+
+This chapter explains how to load HRSafeSpace2 as a plug-in in an HRSpace4 project and visually edit the safety layout within a 3D virtual workspace.
 
 {% hint style="info" %}
-
-HRSpace4가 설치되어 있지 않다면, [HD현대로보틱스 다운로드 페이지](https://www.hd-hyundairobotics.com/download-center/list)에 접속하여 제품명에서 HRSpace를 검색하여 최신 버전을 다운로드 받아 설치하십시오.
-
+If HRSpace4 is not installed, visit the [HD Hyundai Robotics Download Center](https://www.hd-hyundairobotics.com/en/download-center/list) and search for HRSpace to download and install the latest version.
 {% endhint %}
 
 {% hint style="warning" %}
-HRSpace v4.3.2.0 이상이 필요합니다.
+HRSpace version 4.3.2.0 or higher is required.
 {% endhint %}
 
 
-HRSpace4에서 아래와 같은 로봇 스폿 용접 셀의 레이아웃을 설계했다고 가정합시다.
+Assume that a robot spot-welding cell layout has been designed in HRSpace4 as shown below:
 
    ![](../_assets/ch05_00_hrspace4.PNG)
 
-HDR220-26 매니퓰레이터 한 대가 셀 안에 설치되어 있습니다. 로봇 플랜지에는 C-타입 스폿 용접건(c_gun_m)이 장착되어 있으며, 로봇은 높이 800mm의 보고대(riser) 위에 설치되어 있습니다. 각 작업 사이클의 시작 시, 작업자가 로봇 전면의 포지셔너(positioner)에 용접 작업물을 장착합니다. 로봇은 작업물에 대해 스폿 용접을 수행하며, 간헐적으로 팁 드레서(tip_dresser)로 드레싱을 수행합니다.
+One HDR220-26 manipulator is installed inside the cell.
+A C-type spot welding gun (c_gun_m) is mounted on the robot flange, and the robot is installed on a riser (Riser) with a height of 800 mm.
+At the start of each work cycle, the operator places the workpiece on the positioner in front of the robot.
+The robot performs spot welding on the workpiece and occasionally uses a tip dresser for dressing.
 
-전체 셀은 5면 펜스(fence)로 둘러싸여 있습니다. 또한, 천장 구조물과의 충돌을 막기 위해 로봇 툴의 Z축 범위는 셀 바닥을 기준으로 0~3400mm 영역으로 제한되며, 펜스 내부에는 기둥이 하나 존재한다고 가정합니다.
+The entire cell is enclosed by five-sided fences.
+To prevent collisions with the ceiling structure, the robot tool’s Z-axis range is limited to 0–3400 mm from the cell floor.
+Additionally, assume there is one column (pillar) inside the fenced area.
 
-우리는 HRSpace4 비주얼 편집 연동 기능의 도움을 받아 SafeSpace2 설정 파라미터를 작성한 뒤, 생성된 safety_parameter.json 파일을 실제 Hi7 로봇 컨트롤러에 다운로드하게 될 것입니다.
-# 5.1 SafeSpace2 플러그인의 설치
+Using HRSpace4's visual editing integration, we will generate SafeSpace2 configuration parameters and then download the resulting safety_parameter.json file to the actual Hi7 robot controller.
+# 5.1 Installing the SafeSpace2 Plug-in
 
 
-1. HRSafeSpace2가 설치된 폴더에서 아래 5개의 파일을 클립보드로 복사합니다.
+1. Copy the following five files from the folder where HRSafeSpace2 is installed:
 
    * favicon.ico
-   * SafeSpace2.en.dll
-   * SafeSpace2.ko.dll
+   * MxSafeSpace2.en.dll
+   * MxSafeSpace2.ko.dll
    * SafeSpace2_en.hrsj
    * SafeSpace2_ko.hrsj
 
    ![](../_assets/ch05_10_plugin_install.PNG)
 
 
-2. HRSpace4가 설치된 폴더에서 Library/Etc/에 SafeSpace2/ 폴더를 생성한 후, 그 안에 파일들을 붙여넣기 합니다.
+2. In the folder where HRSpace4 is installed, create a folder
+`SafeSpace2/` on the `Library/Etc/` folder, and paste the copied files into this folder.
 
    ![](../_assets/ch05_15_plugin_install2.PNG)
-# 5.2 SafeSpace2 플러그인의 로드
 
 
-1. HRSpace4의 작업공간의 robot 모델에 대해, 팝업 메뉴를 열고 `모델 불러오기...` 를 선택합니다.
+{% hint style="info" %}
+
+When launching HRSpace4 for the first time after installing the plug-in, the following dialog may appear.
+Please wait until the configuration is complete.
+
+   ![](../_assets/ch05_18_plugin_install3.PNG)
+
+{% endhint %}
+# 5.2 Loading the SafeSpace2 Plug-in
+
+
+1. In HRSpace4, right-click the robot model in your workspace and select `Load Model as a Child...` from the pop-up menu.
 
    ![](../_assets/ch05_20_plugin_load.PNG)
 
-2. `범주 - 기타` 항목에 체크한 후, 목록에서 `SafeSpace2_ko`를 선택하고, `확인` 버튼을 클릭합니다.
+2. Check the `Category - Etc.`, select `SafeSpace2_en` from the list, and click `OK`.
 
    ![](../_assets/ch05_25_plugin_load2.PNG)
 
-3. robot 모델의 서브 모델로 생성된 SafeSpace2 모델에 팝업 메뉴를 열고 `확장 속성...` 를 선택합니다.
+3. Right-click the SafeSpace2 model created as a sub-model of the robot, and select `Extension properties...` from the pop-up menu.
 
    ![](../_assets/ch05_30_ex_prop.PNG)
 
-4. SafeSpace2 모델의 확장 속성 대화상자로서, HRSafeSpace2 대화상자가 열렸습니다.
+4. The Extension properties dialog for the SafeSpace2 model will open, which is the HRSafeSpace2 interface.
 
    ![](../_assets/ch05_35_ex_prop2.PNG)
-# 5.3 SafeSpace2 플러그인에서의 파일 열기와 저장하기
+# 5.3 Opening and Saving Files in the SafeSpace2 Plug-in
 
 
-HRSpace의 플러그인으로 동작할 때는 별도로 지정하지 않아도, 디폴트로 아래의 파일을 불러오고, 저장합니다.
+When operating as a plug-in in HRSpace, the following file is loaded and saved by default, without additional specification:
 
 ```
-{HRSpace 프로젝트 폴더}/{로봇의 가상제어기 폴더}/project/safety/safety_parameter.json
+{HRSpace project folder}/{robot's virtual controller folder}/project/safety/safety_parameter.json
 ```
 
-예를 들어, spot_LH2/ 라는 폴더에 spot.LH2.hrsj 파일을 저장했고, 로봇 모델의 이름이 `robot_0` 인 경우라면, 파일 구조는 아래와 같습니다.
+For example, if you have saved the project file `spot_LH2.hrsj` in the folder `spot_LH2/` and the robot model is named `robot_0`, the folder structure is as follows:
 
 ```
 spot_LH2/
@@ -297,176 +326,207 @@ spot_LH2/
       jobs/
       logs/
       safety/
-        safety_parameter.json   <--- 이 파일을 자동으로 불러오고 저장함.
+        safety_parameter.json   <--- This file is automatically loaded and saved.
       vars/
       hi6_proj.json
-  spot.LH2.hrsj
+  spot_LH2.hrsj
 ```
 
-디폴트가 아닌 다른 파일을 불러오고 저장하고 싶다면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 사용해도 되며, 3D 뷰와의 연동은 동일하게 적용됩니다.
-# 5.4 작업 공간의 설정
+If you wish to load or save a file other than the default, you can use `File - Save` or `File - Save As...`.
+Integration with the 3D view works in the same way regardless of the file chosen.
+# 5.4 Configuring the Working Space
 
 
-로봇 툴의 동작 범위를 허용된 작업 공간 내로 제한하기 위해 space를 정의해 보겠습니다. XY 평면은 5각형의 펜스 안으로 제한하고, Z축 범위는 0~3400mm 로 제한합시다.
+We will define the space to limit the robot tool's operating range within the allowed workspace.
+The XY plane will be restricted inside the pentagonal fence, and the Z-axis range will be limited to 0–3400 mm.
 
-1. 작업 편의를 위해 뷰를 위에서 내려다보는 방향으로 바꿉니다. HRSpace4의 `보기(V)` 리본메뉴에서 `위에서 보기`를 선택합니다. (클릭할 때마다 90도씩 회전합니다.)
+1. For convenience, change the view to a top-down perspective.
+In HRSpace4, select `Top` from the `View` ribbon menu.
+(Each click rotates the view 90°.)
 
    ![](../_assets/ch05_40_view_up.PNG)
 
-
-2. 영역 선택에 방해가 되는 기둥(pillar) 모델은 잠시 `스타일 - 보이기`의 체크를 꺼서 감춥니다.
+2. Temporarily hide the column (pillar) model that obstructs area selection by unchecking it in `Style - Show`.
 
    ![](../_assets/ch05_43_pillar.PNG)
    ![](../_assets/ch05_46_show.PNG)
 
-
-3. 확장 속성에서 `layout/spaces/space 0`을 선택합니다. `일반` 탭에서 활성화 항목을 `항상 on`으로 설정합니다. 아래 그림과 같이 설정되어 있어야 합니다.
+3. In Extended Properties, select `layout/spaces/space 0`.
+On the General tab, set the `Activation` option to `Always On`.
+The settings should match the figure below:
 
    ![](../_assets/ch05_50_space_gen.PNG)
 
-
-4. `영역` 탭에서 Z max를 20으로 설정하고, 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`으로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 펜스 5개의 모서리의 약간 안쪽 바닥을 차례로 클릭합니다. 작업 공간을 의미하는 연두색 다각형 평면이 표시됩니다.
+4. On the `Area` tab, click the `Start Input` button on the right.
+   (The button will change to `End Input`.)
+   Using the left mouse button, click slightly inside each of the five corners of the pentagonal fence in the 3D view.
+   A light green polygon will appear, representing the working space.
+   (Z max and Z min are automatically set to 20 and -20, respectively.)
 
    ![](../_assets/ch05_53_space_area.PNG)
 
-
-5. 5개의 포인트를 모두 클릭했다면, `입력 완료` 버튼을 클릭합니다. (버튼은 다시 `입력 시작`으로 바뀝니다.) 만일 영역을 다시 선택하고 싶다면, `입력 시작` 버튼을 눌러 이전 정점들을 모두 클리어하고 다시 시작할 수 있습니다.
+5. After selecting all five points, click the `End Input` button. (The button will revert to `Start Input`.)
+If you want to redefine the area, click `Start Input` to clear all previous points and start over.
 
    ![](../_assets/ch05_54_space_area2.PNG)
 
 
-6. 수치를 정밀하게 조정해야 한다면, 테이블 위젯에 직접 수치를 타이핑하면 됩니다. HRSafeSpace의 저장(![](../_assets/toolbar_save.PNG)) 버튼을 눌러야 3D 뷰에 반영됩니다.
+6. For precise adjustments, you can type values directly into the table widget.
+Click the (![](../_assets/toolbar_save.PNG)) button to apply the changes to the 3D view.
 
    ![](../_assets/ch05_56_space_area_adjust.PNG)
 
 
-7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. default Z 범위 설정이 20 ~ 0 mm이기 때문에, 옆에서 보면 작업 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
+7. Rotate the view to inspect from the side.
+   Since the current Z range is -20 to 20 mm, the working space appears flat at the robot base height when viewed from the side.
 
    ![](../_assets/ch05_58_z.PNG)
 
 
-8. 로봇 좌표계의 높이가 800mm이고, Z축 범위는 월드 좌표계 기준 0~3400mm이어야 하므로, 로봇 좌표계 기준으로 Zmin~Zmax는 -800~2600mm 범위로 설정해야 합니다. 값 입력 후, HRSafeSpace의 저장(![](../_assets/toolbar_save.PNG)) 버튼을 클릭하면, 아래와 같이 설정이 완료됩니다.
+8. The robot coordinate system is at a height of 800 mm, and the Z-axis range should be 0–3400 mm in world coordinates.
+Therefore, in robot coordinates, set Zmin–Zmax to -800–2600 mm.
+After entering the values, click the ![](../_assets/toolbar_save.PNG) button to finalize the configuration.
 
    ![](../_assets/ch05_60_z2.PNG)
 
 
-9. `홈(H) - 기즈모`를 열고, 크기 조정 모드로 Z축을 드래그하여 Zmax를 조정할 수도 있습니다. (Zmin 등 다른 설정은 조정할 수 없습니다.)
+9. Open `Home - Gizmo`, and in position or scale adjustment mode, drag along the Z-axis to adjust Zmax and Zmin. (Adjustment along the X or Y axes is not available.)
 
    ![](../_assets/ch05_61_z3.PNG)
 
 
-10. 설정된 작업 공간 형상이 셀을 채우고 있어서, 다른 설정에 방해가 됩니다. `일반` 탭에서 활성화 항목을 `항상 off`로 설정하면, 작업 공간 형상이 일단 감춰집니다. 다른 설정을 모두 완료한 후 다시 `항상 on`으로 바꾸도록 합시다.
-# 5.5 보호 공간의 설정
+10. Since the configured working space occupies the entire cell, it may obstruct other settings.
+On the `General` tab, set Activation to `Always Off` to temporarily hide the working space shape.
+After completing other settings, switch it back to `Always On`.
+# 5.5 Configuring the Protective Space
 
 
-인간 작업자가 서 있을 수 있는 장소를 보호 공간으로 지정합시다.
+Let’s designate the area where a human operator can stand as a protected space.
 
-1. 작업 편의를 위해 뷰를 위에서 내려다보는 방향으로 바꿉니다. HRSpace4의 `보기(V)` 리본메뉴에서 `위에서 보기`를 선택합니다.
+1. For convenience, change the view to a top-down perspective.
+   In HRSpace4, select `Top` from the `View` ribbon menu.
 
    ![](../_assets/ch05_40_view_up.PNG)
 
 
-2. 확장 속성에서 `layout/spaces/space 1`을 선택합니다. `일반` 탭에서 활성화 항목을 `항상 on`으로 설정하고, 타입은 `보호 공간`으로 설정합니다. 아래 그림과 같이 설정되어 있어야 합니다.
+2. In Extension Properties, select `layout/spaces/space 1`.
+On the General tab, set the `Activation` option to `Always On`.
+   The settings should match the figure below:
 
    ![](../_assets/ch05_62_ps01.PNG)
 
 
-3. `영역` 탭에서 Z max를 20으로 설정하고, 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 인간 작업자 주변의 바닥 4개의 지점을 차례로 클릭합니다. 보호 공간을 의미하는 빨간색 다각형 평면이 표시됩니다.
+3. On the `Area` tab, click the `Start Input` button on the right.
+   (The button will change to `End Input`.)
+   Now, use the left mouse button to click four points on the floor around the human operator in the 3D view.
+   A red polygon will appear, representing the protective space.
+   (Z max and Z min are automatically set to 20 and -20, respectively.)
 
    ![](../_assets/ch05_62_ps05.PNG)
 
 
-4. 4개의 포인트를 모두 클릭했다면, `입력 완료` 버튼을 클릭합니다. (버튼은 다시 `입력 시작`으로 바뀝니다.) 만일 영역을 다시 선택하고 싶다면, `입력 시작` 버튼을 눌러 이전 정점들을 모두 클리어하고 다시 시작할 수 있습니다.
+4. After selecting all four points, click the `End Input` button. (The button will revert to `Start Input`.)
+   If you want to redefine the area, click `Start Input` to clear all previous points and start over.
 
 
-5. 수치를 정밀하게 조정해야 한다면, 테이블 위젯에 직접 수치를 타이핑하면 됩니다. 저장 버튼을 눌러야 3D 뷰에 반영됩니다.
+5. For precise adjustments, you can type values directly into the table widget.
+Click the (![](../_assets/toolbar_save.PNG)) button to apply the changes to the 3D view.
 
    ![](../_assets/ch05_62_ps10.PNG)
 
 
-7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. default Z 범위 설정이 20 ~ 0 mm이기 때문에, 옆에서 보면 보호 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
+6. Rotate the view to inspect from the side.
+   Since the current Z range is -20 to 20 mm, the working space appears flat at the robot base height when viewed from the side.
 
    ![](../_assets/ch05_62_ps15.PNG)
 
 
-8. 로봇 바닥 높이가 800mm 이므로, 보호 공간의 높이를 3000mm로 한다면 Zmin~Zmax를 -800~2200mm 범위로 설정하면 됩니다. 값 입력 후, 확장 속성(HRSafeSpace)의 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 아래와 같이 설정이 완료됩니다.
+7. Since the robot base height is 800 mm, if the protective space height is set to 3000 mm, set Zmin–Zmax to -800–2200 mm. After entering the values, click the ![](../_assets/toolbar_save.PNG) button to finalize the configuration.
 
    ![](../_assets/ch05_62_ps20.PNG)
-# 5.6 로봇 링크의 설정
+# 5.6 Configuring Robot Links
 
-로봇의 upper_frame과 arm_frame에 캡슐 영역을 씌워서, 충돌을 예방할 수 있습니다. 
+You can apply capsule volumes to the robot's upper_frame and arm_frame to prevent collisions.
 
-1. 확장 속성에서 `layout/robot`을 선택합니다. 링크 3, 링크 2에 대해 각기 아래와 같이 변경하고 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 두 링크의 위치에 각기 캡슐 영역이 나타납니다.
+1. In Extension Properties, select `layout/robot`.
+   Modify Link 3 and Link 2 as follows, then click the ![](../_assets/toolbar_save.PNG) button. Capsules will appear at the positions of the two links.
 
-   - 링크 3 (V)
-     * 반지름: 300mm 
-     * 실린더 높이: 600mm
-     * RY : 90 deg
+   - Link 3 (Vertical)
+     * Radius: 300 mm
+     * Cylinder Height: 600 mm
+     * RY: 90°
 
-   - 링크 2 (H)
-     * 반지름: 300mm 
-     * 실린더 높이: 600mm     
+   - Link 2 (Horizontal)
+     * Radius: 300 mm
+     * Cylinder Height: 600 mm
 
    ![](../_assets/ch05_64_link.PNG)
 
 
-2. `홈(H) - 기즈모`를 열고, 링크 3의 캡슐을 선택합니다. 기즈모를 크기 모드와 위치 모드로 전환해 가면서 캡슐의 크기와 위치를 링크 3를 포함하도록 적당히 조정합니다.
+2. Open `Home - Gizmo`, select the capsule for Link 3, and switch between Scale and Position modes to adjust the capsule size and position so that it fully encloses Link 3.
 
    ![](../_assets/ch05_64_link_gizmo.PNG)
 
    ![](../_assets/ch05_66_link_gizmo2.PNG)
 
-3. 링크 2의 캡슐을 선택하여, 같은 방법으로 캡슐의 크기와 위치를 링크 2를 포함하도록 적당히 조정합니다. 기즈모로 조작한 결과는 확장 속성 대화상자에 즉각적으로 반영됩니다.
+
+3. Select the capsule for Link 2 and adjust its size and position in the same way to fully enclose Link 2.
+   Changes made with the gizmo are immediately reflected in the Extension Properties dialog.
 
    ![](../_assets/ch05_68_link_gizmo3.PNG)
+# 5.7 Configuring the Tool
 
-# 5.7 툴의 설정
 
-로봇의 툴에 다양한 형상의 영역을 씌워서, 충돌을 예방할 수 있습니다. 
+You can apply various-shaped volumes to the robot's tool to prevent collisions.
 
-1. 확장 속성에서 `layout/tools/tool0`을 선택합니다. 각 툴 번호의 형상은 최대 10개의 모델을 조합하여 구성할 수 있습니다. 우선 Model 0의 형상을 아래와 같이 설정하고 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면 로봇 프렌지 좌표계에 형상이 나타납니다.
+1. In Extension Properties, select `layout/tools/tool0`. Each tool can combine up to 10 models.
+First, set Model 0 as follows, then click the  ![](../_assets/toolbar_save.PNG) button.
+   The shape will appear in the robot flange coordinate system.
 
-   * 형상: `둥근판`
-   * 반지름: 200mm
-   * 높이: 500mm
-   * 너비: 300mm
-   * 나머지 항목은 0
+   * Shape: `R.Plate`
+   * Radius: 200 mm
+   * Height: 500 mm
+   * Width: 300 mm
+   * Other parameters: 0
 
    ![](../_assets/ch05_70_tool_tool.PNG)
 
 
-2. 형상이 툴 전체를 포함하도록, 기즈모를 사용하여 Model 0을 이동, 회전, 크기 조정하십시오. 기즈모로 조작한 결과는 확장 속성 대화상자에 즉각적으로 반영됩니다.
+2. Use the Gizmo to move, rotate, and scale Model 0 so that it fully encloses the tool.
+   Changes made with the gizmo are immediately reflected in the Extension Properties dialog.
 
    ![](../_assets/ch05_72_tool_tool2.PNG)
 
 
-3. 크기나 위치의 정밀하게 조정해야 한다면, Model 0의 모델 속성을 열여 직접 수치를 타이핑해 수정해도 됩니다.
+3. For precise adjustments, open Model 0's model properties and type the values directly.
 
    ![](../_assets/ch05_73_tool_tool_model_prop.PNG)
 
 
-4. Model 0 형상 바깥으로 튀어나온 부분이 있으므로, Model을 하나 더 추가하겠습니다. Model 1에 아래와 같이 캡슐을 생성한 후, 마찬가지로 기즈모를 사용하여 튀어나온 부분을 덮어주십시오.
+4. If there are portions extending beyond Model 0, add another model.
+Create Model 1 as a capsule and use the gizmo to cover the protruding areas.
 
-   * 형상: `캡슐`
-   * 반지름: 200mm
-   * 높이: 500mm
-   * 나머지 항목은 0
-
-   ![](../_assets/ch05_74_tool_tool3.PNG)
-# 5.8 툴 방향의 설정
-
-로봇의 툴이 가리키는 방향을 특정한 각도 범위로 제한하고 싶다면, 툴 방향 (tool_orients) 설정 항목을 사용할 수 있습니다.
-
-(시험 및 설명의 편의를 위해, 이전 절에 실습한 tool 형상은 삭제했으며, 스폿 용접 건 툴은 스타일 - 투명도를 60%로 조정했습니다.)
+   * Shape: `Capsule`
+   * Radius: 200 mm
+   * Height: 500 mm
+   * Other parameters: 0
+# 5.8 Configuring Tool Orientation
 
 
-1. 확장 속성에서 `layout/tool_orients`를 선택합니다. 각도 편차를 60 deg로 입력한 후 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면 로봇 프렌지 좌표계에 원뿔 모양의 툴 방향 범위가 표시됩니다.
+If you want to limit the direction that the robot tool points within a specific angular range, you can use the Tool Orientation (tool_orient) settings.
+
+(For demonstration purposes, the tool shapes from the previous section have been removed, and the spot welding gun tool's transparency is set to 60% via `Style - Transparency`.)
+
+
+1. In Extension Properties, select `layout/tool_orient`.
+   Enter an angular deviation of 60°, then click the [](../_assets/toolbar_save.PNG) button. A cone-shaped tool orientation range will appear in the robot flange coordinate system.
 
    ![](../_assets/ch05_76_tool_orient.PNG)
 
 
-2. Org.Rx, Ry, Rz가 (0, 0, 0)deg 일 때, 원뿔은 로봇좌표계 기준으로 하늘로 향하는 +Z방향으로 퍼져 나가는 형상이 됩니다. 이 원뿔 범위 60 deg는 TCP의 +Z축을 제한합니다.
-   아래 그림은 TCP의 Z축이 허용 범위 내에 있는 상황과, 범위를 벗어난 상황의 예를 보여주고 있습니다.
+2. When Org.Rx, Ry, Rz are set to (0, 0, 0)°, the cone extends upward along the +Z direction in robot coordinates.
+   This 60° cone limits the TCP +Z axis.
+   The images below illustrate the TCP Z-axis within the allowed range and outside the range:
 
 <table>
    <tr>
@@ -479,26 +539,26 @@ spot_LH2/
    </tr>
    <tr>
       <td align='center'>
-         범위 내에 있음.
+          within the allowed range
       </td>
       <td align='center'>
-         범위를 벗어남.
+         outside the allowed range
       </td>
    </tr>
 </table>   
 
 
-3. 툴 방향의 범위 크기나 방향의 수치를 수정한 후 다시 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 3D 뷰에도 반영됩니다.
-# 별첨
+3. After modifying the angular range or direction values, click the ![](../_assets/toolbar_save.PNG) button again to apply the changes to the 3D view.
+# Appendices
 
   
 
 
-# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+# Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
 
-당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+The industrial robot should be installed in consideration of the inspection standards, both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection (if subject to inspection).
 
-"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
-# 품질보증
+"[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
+# Quality Assurance
 
-"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/english/README)"
