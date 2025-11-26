@@ -1,53 +1,64 @@
-﻿# 5.4 작업 공간의 설정
+﻿# 5.4 Configuring the Working Space
 
 
-로봇 툴의 동작 범위를 허용된 작업 공간 내로 제한하기 위해 space를 정의해 보겠습니다. XY 평면은 5각형의 펜스 안으로 제한하고, Z축 범위는 0~3400mm 로 제한합시다.
+We will define the space to limit the robot tool's operating range within the allowed workspace.
+The XY plane will be restricted inside the pentagonal fence, and the Z-axis range will be limited to 0–3400 mm.
 
-1. 작업 편의를 위해 뷰를 위에서 내려다보는 방향으로 바꿉니다. HRSpace4의 `보기(V)` 리본메뉴에서 `위에서 보기`를 선택합니다. (클릭할 때마다 90도씩 회전합니다.)
+1. For convenience, change the view to a top-down perspective.
+In HRSpace4, select `Top` from the `View` ribbon menu.
+(Each click rotates the view 90°.)
 
    ![](../_assets/ch05_40_view_up.PNG)
 
-
-2. 영역 선택에 방해가 되는 기둥(pillar) 모델은 잠시 `스타일 - 보이기`의 체크를 꺼서 감춥니다.
+2. Temporarily hide the column (pillar) model that obstructs area selection by unchecking it in `Style - Show`.
 
    ![](../_assets/ch05_43_pillar.PNG)
    ![](../_assets/ch05_46_show.PNG)
 
-
-3. 확장 속성에서 `layout/spaces/space 0`을 선택합니다. `일반` 탭에서 활성화 항목을 `항상 on`으로 설정합니다. 아래 그림과 같이 설정되어 있어야 합니다.
+3. In Extended Properties, select `layout/spaces/space 0`.
+On the General tab, set the `Activation` option to `Always On`.
+The settings should match the figure below:
 
    ![](../_assets/ch05_50_space_gen.PNG)
 
-
-4. `영역` 탭에서 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`으로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 펜스 5개의 모서리의 약간 안쪽 바닥을 차례로 클릭합니다. 작업 공간을 의미하는 연두색 다각형 평면이 표시됩니다.
-(Z max, Z min은 자동으로 20, -20으로 설정됩니다.)
+4. On the `Area` tab, click the `Start Input` button on the right.
+   (The button will change to `End Input`.)
+   Using the left mouse button, click slightly inside each of the five corners of the pentagonal fence in the 3D view.
+   A light green polygon will appear, representing the working space.
+   (Z max and Z min are automatically set to 20 and -20, respectively.)
 
    ![](../_assets/ch05_53_space_area.PNG)
 
-
-5. 5개의 포인트를 모두 클릭했다면, `입력 완료` 버튼을 클릭합니다. (버튼은 다시 `입력 시작`으로 바뀝니다.) 만일 영역을 다시 선택하고 싶다면, `입력 시작` 버튼을 눌러 이전 정점들을 모두 클리어하고 다시 시작할 수 있습니다.
+5. After selecting all five points, click the `End Input` button. (The button will revert to `Start Input`.)
+If you want to redefine the area, click `Start Input` to clear all previous points and start over.
 
    ![](../_assets/ch05_54_space_area2.PNG)
 
 
-6. 수치를 정밀하게 조정해야 한다면, 테이블 위젯에 직접 수치를 타이핑하면 됩니다. HRSafeSpace의 저장(![](../_assets/toolbar_save.PNG)) 버튼을 눌러야 3D 뷰에 반영됩니다.
+6. For precise adjustments, you can type values directly into the table widget.
+Click the (![](../_assets/toolbar_save.PNG)) button to apply the changes to the 3D view.
 
    ![](../_assets/ch05_56_space_area_adjust.PNG)
 
 
-7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. 현재 Z 범위가 -20~20 mm이기 때문에, 옆에서 보면 작업 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
+7. Rotate the view to inspect from the side.
+   Since the current Z range is -20 to 20 mm, the working space appears flat at the robot base height when viewed from the side.
 
    ![](../_assets/ch05_58_z.PNG)
 
 
-8. 로봇 좌표계의 높이가 800mm이고, Z축 범위는 월드 좌표계 기준 0~3400mm이어야 하므로, 로봇 좌표계 기준으로 Zmin~Zmax는 -800~2600mm 범위로 설정해야 합니다. 값 입력 후, HRSafeSpace의 저장(![](../_assets/toolbar_save.PNG)) 버튼을 클릭하면, 아래와 같이 설정이 완료됩니다.
+8. The robot coordinate system is at a height of 800 mm, and the Z-axis range should be 0–3400 mm in world coordinates.
+Therefore, in robot coordinates, set Zmin–Zmax to -800–2600 mm.
+After entering the values, click the ![](../_assets/toolbar_save.PNG) button to finalize the configuration.
 
    ![](../_assets/ch05_60_z2.PNG)
 
 
-9. `홈(H) - 기즈모`를 열고, 위치 조정 혹은 크기 조정 모드로 Z축을 드래그하여, Zmax, Zmin을 조정할 수도 있습니다. (X축이나 Y축은 조정할 수 없습니다.)
+9. Open `Home - Gizmo`, and in position or scale adjustment mode, drag along the Z-axis to adjust Zmax and Zmin. (Adjustment along the X or Y axes is not available.)
 
    ![](../_assets/ch05_61_z3.PNG)
 
 
-10. 설정된 작업 공간 형상이 셀을 채우고 있어서, 다른 설정에 방해가 됩니다. `일반` 탭에서 활성화 항목을 `항상 off`로 설정하면, 작업 공간 형상이 일단 감춰집니다. 다른 설정을 모두 완료한 후 다시 `항상 on`으로 바꾸도록 합시다.
+10. Since the configured working space occupies the entire cell, it may obstruct other settings.
+On the `General` tab, set Activation to `Always Off` to temporarily hide the working space shape.
+After completing other settings, switch it back to `Always On`.

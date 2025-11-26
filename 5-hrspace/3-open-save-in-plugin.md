@@ -1,13 +1,13 @@
-﻿# 5.3 SafeSpace2 플러그인에서의 파일 열기와 저장하기
+﻿# 5.3 Opening and Saving Files in the SafeSpace2 Plug-in
 
 
-HRSpace의 플러그인으로 동작할 때는 별도로 지정하지 않아도, 디폴트로 아래의 파일을 불러오고, 저장합니다.
+When operating as a plug-in in HRSpace, the following file is loaded and saved by default, without additional specification:
 
 ```
-{HRSpace 프로젝트 폴더}/{로봇의 가상제어기 폴더}/project/safety/safety_parameter.json
+{HRSpace project folder}/{robot's virtual controller folder}/project/safety/safety_parameter.json
 ```
 
-예를 들어, spot_LH2/ 라는 폴더에 spot.LH2.hrsj 파일을 저장했고, 로봇 모델의 이름이 `robot_0` 인 경우라면, 파일 구조는 아래와 같습니다.
+For example, if you have saved the project file `spot_LH2.hrsj` in the folder `spot_LH2/` and the robot model is named `robot_0`, the folder structure is as follows:
 
 ```
 spot_LH2/
@@ -16,10 +16,11 @@ spot_LH2/
       jobs/
       logs/
       safety/
-        safety_parameter.json   <--- 이 파일을 자동으로 불러오고 저장함.
+        safety_parameter.json   <--- This file is automatically loaded and saved.
       vars/
       hi6_proj.json
-  spot.LH2.hrsj
+  spot_LH2.hrsj
 ```
 
-디폴트가 아닌 다른 파일을 불러오고 저장하고 싶다면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 사용해도 되며, 3D 뷰와의 연동은 동일하게 적용됩니다.
+If you wish to load or save a file other than the default, you can use `File - Save` or `File - Save As...`.
+Integration with the 3D view works in the same way regardless of the file chosen.

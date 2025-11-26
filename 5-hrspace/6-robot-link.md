@@ -1,28 +1,30 @@
-﻿# 5.6 로봇 링크의 설정
+﻿# 5.6 Configuring Robot Links
 
-로봇의 upper_frame과 arm_frame에 캡슐 영역을 씌워서, 충돌을 예방할 수 있습니다. 
+You can apply capsule volumes to the robot's upper_frame and arm_frame to prevent collisions.
 
-1. 확장 속성에서 `layout/robot`을 선택합니다. 링크 3, 링크 2에 대해 각기 아래와 같이 변경하고 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 두 링크의 위치에 각기 캡슐 영역이 나타납니다.
+1. In Extended Properties, select `layout/robot`.
+   Modify Link 3 and Link 2 as follows, then click the ![](../_assets/toolbar_save.PNG) button. Capsules will appear at the positions of the two links.
 
-   - 링크 3 (V)
-     * 반지름: 300mm 
-     * 실린더 높이: 600mm
-     * RY : 90 deg
+   - Link 3 (Vertical)
+     * Radius: 300 mm
+     * Cylinder Height: 600 mm
+     * RY: 90°
 
-   - 링크 2 (H)
-     * 반지름: 300mm 
-     * 실린더 높이: 600mm     
+   - Link 2 (Horizontal)
+     * Radius: 300 mm
+     * Cylinder Height: 600 mm
 
    ![](../_assets/ch05_64_link.PNG)
 
 
-2. `홈(H) - 기즈모`를 열고, 링크 3의 캡슐을 선택합니다. 기즈모를 크기 모드와 위치 모드로 전환해 가면서 캡슐의 크기와 위치를 링크 3를 포함하도록 적당히 조정합니다.
+2. Open `Home - Gizmo`, select the capsule for Link 3, and switch between Scale and Position modes to adjust the capsule size and position so that it fully encloses Link 3.
 
    ![](../_assets/ch05_64_link_gizmo.PNG)
 
    ![](../_assets/ch05_66_link_gizmo2.PNG)
 
-3. 링크 2의 캡슐을 선택하여, 같은 방법으로 캡슐의 크기와 위치를 링크 2를 포함하도록 적당히 조정합니다. 기즈모로 조작한 결과는 확장 속성 대화상자에 즉각적으로 반영됩니다.
+
+3. Select the capsule for Link 2 and adjust its size and position in the same way to fully enclose Link 2.
+   Changes made with the gizmo are immediately reflected in the Extended Properties dialog.
 
    ![](../_assets/ch05_68_link_gizmo3.PNG)
-

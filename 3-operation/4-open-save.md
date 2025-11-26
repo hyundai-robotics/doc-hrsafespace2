@@ -1,20 +1,19 @@
-﻿# 3.4 저장과 불러오기
+﻿# 3.4 Saving and Loading
 
-- 설정 내용을 저장하려면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 선택하십시오.
+
+- To save your configuration, select `File - Save` or `File - Save As...` from the menu.
 
   ![](../_assets/ch03_60_open_save.PNG)
-  
-  혹은 툴 바에서 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하십시오.  
-  
 
-- 저장 대화상자에서 원하는 폴더로 이동 후, 파일명을 입력하십시오. 설정 파일은 .json 포맷으로 저장됩니다.
+  Alternatively, click the Save button on the toolbar:
+
+- In the save dialog, navigate to the desired folder and enter a file name.
+Configuration files are saved in `.json` format.
 
   ![](../_assets/ch03_63_save.PNG)
 
-- HRSafeSpace2를 다시 실행했을 때, 저장된 파일을 불러오기하려면, `파일(F) - 열기(O)`  메뉴를 선택하십시오. 혹은 툴 바에서 ![](../_assets/toolbar_open.PNG) 버튼을 클릭하십시오.
+- To load a previously saved file after restarting HRSafeSpace2, select `File - Open` from the menu, or click the ![](../_assets/toolbar_open.PNG) button on the toolbar:
 
-- 저장했던 파일을 선택하면, 설정 내용이 화면에 로드됩니다.
+- Selecting the saved file will load the configuration into the application.
 
-- SafeSpace2의 설정을 디폴트 값으로 다시 시작하려면, `파일(F) - 새 파일(N)` 메뉴를 선택하면 됩니다. 혹은 툴 바에서 ![](../_assets/toolbar_new.PNG) 버튼을 클릭하십시오.
-
-  
+- To reset SafeSpace2 settings to their default values, select `File - New` from the menu, or click the ![](../_assets/toolbar_new.PNG) button on the toolbar:

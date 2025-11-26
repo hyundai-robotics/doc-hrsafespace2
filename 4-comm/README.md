@@ -1,3 +1,4 @@
-﻿# 4. 통신
+﻿# 4. Communication
 
-이번 장에서는 HRSafeSpace2를 Hi7 제어기와 연결하고, 암호를 설정하고, 설정한 내용을 다운로드하거나 업로드하는 방법에 대해 설명하겠습니다.
+
+This chapter explains how to connect HRSafeSpace2 to the Hi7 controller, set a password, and download or upload the configured settings.

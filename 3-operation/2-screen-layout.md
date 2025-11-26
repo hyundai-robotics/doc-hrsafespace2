@@ -1,11 +1,13 @@
-﻿# 3.2 화면 구성
+﻿# 3.2 Screen Layout
+
 
 ![](../_assets/ch03_20_hrsafespace2.PNG)
 
-* 상단에는 제목막대와 풀다운 메뉴, 툴 바가 있습니다.
+* At the top, you will find the title bar, pull-down menus, and the toolbar.
 
-* 좌측에는 SafeSpace2의 각 설정 항목을 보여주는 트리창이 있습니다.
+* On the left side, a tree view displays all configuration items for SafeSpace2.
 
-* 트리창에서 특정한 설정 항목을 선택하면, 해당하는 설정 화면에 우측에 나타납니다.
+* When you select a specific item in the tree, the corresponding configuration screen appears on the right.
 
-* 하단에는 각종 에러나 메시지가 기록되는 로그창이 있습니다. 로그창 우측의 `로그 클리어` 버튼을 클릭하면 로그창이 비워집니다.
+* At the bottom, the log window displays various errors and messages.
+Clicking the `Clear Log` button on the right side of the log window clears the log entries.

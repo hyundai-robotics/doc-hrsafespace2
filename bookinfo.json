@@ -1,8 +1,8 @@
 ﻿{
-    "langCode": "ko",
-    "series": "현대로봇 Hi7 제어기",
-    "title": "기능설명서 - HRSafeSpace2",
-    "publisher": "HD현대로보틱스",
-    "tocTitle": "목차",
+    "langCode": "en",
+    "series": "Hyundai Robot Hi7 Controller",
+    "title": "Function Manual - HRSafeSpace2",
+    "publisher": "HD Hyundai Robotics",
+    "tocTitle": "Table of Contents",
     "tocTitleElements": "[ \"h1\", \"h2\" ]"
 }

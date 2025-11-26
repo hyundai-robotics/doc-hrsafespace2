@@ -1,46 +1,42 @@
-﻿# 4.2 패스워드
+﻿# 4.2 Password
 
-SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도록, Hi7 제어기에 반드시 SafeSpace2 패스워드를 설정해야 합니다.
 
-## 아직 설정하지 않은 경우, 패스워드 설정 방법
+To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to set a SafeSpace2 password on the Hi7 controller.
 
-1. `도구(T) - 패스워드 변경(P)` 메뉴를 선택합니다.
+
+## Setting a Password for the First Time
+
+1. Select `Tools - Change Password` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar-password.PNG) 버튼을 클릭하십시오.
+   Alternatively, click the ![](../_assets/toolbar-password.PNG) button on the toolbar:
 
-
-2. 아래와 같은 대화상자가 나타나면, `새 패스워드`에 새로 설정할 암호를 입력하고 `패스워드 확인`에도 동일한 암호를 입력한 후, `변경(C)`을 클릭하십시오.
+2. When the dialog appears, enter the new password in `New Password` and re-enter the same password in `Confirm Password`, then click `Change`.
 
    ![](../_assets/ch04_20_ch_password.PNG)
 
-
-3. `완료` 메시지박스가 표시되면 성공한 것입니다.
+3. If the `Complete` message box appears, the password has been successfully set.
 
    ![](../_assets/msgbox_complete.PNG)
 
-
-4. `타임아웃 에러` 메시지박스가 표시되면 IP주소 설정이나 이더넷 케이블 연결, 혹은 Hi7 제어기가 정상적인 상황인지 등을 확인하십시오.
+4. If a `Timeout Error` message box appears, check the IP address settings, the Ethernet cable connection, or whether the Hi7 controller is functioning properly.
 
    ![](../_assets/ch04_30_timeout.PNG)
 
 
-## 설정되어 있는 상태에서, 패스워드 변경 방법
+## Changing an Existing Password
 
-1. `도구(T) - 패스워드 변경(P)` 메뉴를 선택합니다.
+1. Select `Tools - Change Password` from the menu.
 
    ![](../_assets/ch04_00_tool_menu.PNG)
 
-   혹은 툴 바에서 ![](../_assets/toolbar-password.PNG) 버튼을 클릭하십시오.
+   Or click the ![](../_assets/toolbar-password.PNG) button on the toolbar:
 
-
-2. 아래와 같은 대화상자가 나타나면, `이전 패스워드`에 이전의 패스워드, `새 패스워드`에 새로 설정할 암호를 입력하고, `패스워드 확인`에도 새 패스워드와 동일한 암호를 입력한 후, `변경(C)`을 클릭하십시오.
+2. In the dialog, enter the current password in `Old Password`, the new password in `New Password`, and re-enter the new password in `Confirm Password`, then click `Change`.
 
    ![](../_assets/ch04_40_ch_password2.PNG)
 
-
-3. `완료` 메시지박스가 표시되면 성공한 것입니다.
+3. If the `Complete` message box appears, the password has been successfully changed.
 
    ![](../_assets/msgbox_complete.PNG)
-   

@@ -1,11 +1,14 @@
-﻿# 3.3 SafeSpace2 설정
+﻿# 3.3 Configuring SafeSpace2
 
-- 트리창에서 설정할 항목을 선택한 후, 우측 화면에 값을 설정하십시오.
+
+- Select the item you want to configure in the tree view, and set the values on the right-hand screen.
 
   ![](../_assets/ch03_30_setting.PNG)
 
-- 트리창의 다른 항목을 선택하여 다른 화면으로 이동하더라도 입력한 값은 메모리에 보존됩니다. (즉, 다른 화면으로 이동하기 전에 저장할 필요 없습니다.)
+- Even if you select a different item in the tree and move to another screen, the values you entered are retained in memory.
+  (In other words, there is no need to save before switching screens.)
 
-- 허용한 범위 밖의 값을 입력한 경우, 다른 화면으로 이동을 시도할 경우 이동 실패하며, 하단의 로그 창에 잘못 입력한 값과 적법한 범위가 표시됩니다. 적법한 값으로 정정한 후, 이동하십시오.
+- If a value outside the allowed range is entered, attempting to switch to another screen will fail. The log window at the bottom displays the invalid value along with the valid range.
+  Correct the value to fall within the valid range before switching screens.
 
   ![](../_assets/ch03_40_range.PNG)

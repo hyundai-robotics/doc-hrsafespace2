@@ -1,7 +1,9 @@
-﻿# 3. 조작 방법
+﻿# 3. Operation
 
-HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에 내장된 플러그인 (Plug-in) 형태로 실행 가능합니다.
 
-3장과 4장에서는 단독 애플리케이션의 실행 예로서 설명합니다. 이 내용은 플러그인 실행에서도 비슷하게 적용됩니다.
+HRSafeSpace2 can be run either as a stand-alone application or as a plug-in integrated within HRSpace.
 
-우선 3장에서는 HRSafeSpace2의 실행과 화면 구성, 설정 및 파일 저장과 불러오기에 대해 설명하겠습니다.
+Chapters 3 and 4 describe the operation based on the stand-alone application.
+The same procedures apply similarly when running it as a plug-in.
+
+This chapter explains how to launch HRSafeSpace2, its screen layout, and how to load and save configuration files.
