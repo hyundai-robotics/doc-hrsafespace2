@@ -1,21 +1,27 @@
-﻿# Hi7 로봇제어기 기능설명서 - HRSafeSpace2
-
-{% hint style="warning" %}
-본 제품 설명서에서 제공되는 정보는 HD현대로보틱스의 자산입니다.
-
-HD현대로보틱스의 서면에 의한 동의 없이 전부 또는 일부를 무단 전재 및 재배포할 수 없으며, 제3자에게 제공되거나 다른 목적에 사용할 수 없습니다.
+﻿
+[__SOURCE](README.md)
+# Hi7 로봇제어기 기능설명서 - HRSafeSpace2
 
 
+[__SOURCE](0-about-this-manual/README.md)
+# 이 설명서에 대하여
 
-본 설명서는 사전 예고 없이 변경될 수 있습니다.
+[__SOURCE](0-about-this-manual/precautions.md)
+# 사전 주의사항
 
+{% include file="ko/precautions.md" %}
 
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 안전 주의 사항
 
-**Copyright ⓒ 2025 by HD Hyundai Robotics**
-{% endhint %}
+{% include file="ko/safety-notice.md" %}
+
+[__SOURCE](1-preface/README.md)
 # 1. 개요
 
 이 문서는 HD현대로보틱스 Hi7 제어기 SafeSpace2.0 기능의 PC용 설정 유틸리티인 HRSafeSpace2 애플리케이션의 사용법을 설명합니다.
+
+[__SOURCE](1-preface/1-intro.md)
 # 1.1 소개
 
 HD현대로보틱스의 Hi7 제어기는 IEC 61508 Functional safety 표준을 준수하는 안전 기능 SafeSpace v2.0이 탑재되어 있습니다.
@@ -36,6 +42,8 @@ SafeSpace v2.0의 각 설정화면은 위 3가지 디바이스에 동일하게 �
   * HRSafeSpace2를 HRSpace4와 연동하여 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집할 수 있는 기능
 
 각각의 설정화면들에 대한 내용은 [SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/korean/README)를 참고하십시오.
+
+[__SOURCE](1-preface/2-prerequisite.md)
 # 1.2 사전 지식 (prerequisite)
 
 
@@ -46,7 +54,9 @@ SafeSpace v2.0의 각 설정화면은 위 3가지 디바이스에 동일하게 �
   * [SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/korean/README) ; 본 설명서를 먼저 학습해도 됩니다.
 
   * HRSpace4 기능 설명서 (HRSpace4 도움말) ; HRSpace4 연동 시에만 필요합니다.
-  # 2. 설치
+  
+[__SOURCE](2-install/README.md)
+# 2. 설치
 
 - 필수 실행 환경
   * 윈도우10 64bit 및 이후 버전
@@ -67,6 +77,8 @@ SafeSpace v2.0의 각 설정화면은 위 3가지 디바이스에 동일하게 �
 4. Complete 화면이 나오면 `Close` 버튼으로 설치를 종료하십시오. 
    
 	![](../_assets/ch01_14_install.PNG)
+
+[__SOURCE](3-operation/README.md)
 # 3. 조작 방법
 
 HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에 내장된 플러그인 (Plug-in) 형태로 실행 가능합니다.
@@ -74,6 +86,8 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 3장과 4장에서는 단독 애플리케이션의 실행 예로서 설명합니다. 이 내용은 플러그인 실행에서도 비슷하게 적용됩니다.
 
 우선 3장에서는 HRSafeSpace2의 실행과 화면 구성, 설정 및 파일 저장과 불러오기에 대해 설명하겠습니다.
+
+[__SOURCE](3-operation/1-start.md)
 # 3.1 실행 방법
 
 1. 윈도우 바탕화면, 혹은 시작버튼에서 HRSafeSpace2 아이콘을 클릭하십시오. _ko는 한글버전, _en은 영문버전입니다.
@@ -82,7 +96,20 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 
 2. HRSafeSpace2가 실행됩니다.
 
-   ![](../_assets/ch03_20_hrsafespace2.PNG)# 3.2 화면 구성
+   ![](../_assets/ch03_20_hrsafespace2.PNG)
+
+
+{% hint style="info" %}
+
+혹시 실행에 실패한다면, 아래 파일을 설치한 후 다시 시도해 보십시오.
+
+```cmd
+C:/Program Files/HHI Robotics/HRSafeSpace2/vc_redist.x64.exe
+```
+
+{% endhint %}
+[__SOURCE](3-operation/2-screen-layout.md)
+# 3.2 화면 구성
 
 ![](../_assets/ch03_20_hrsafespace2.PNG)
 
@@ -93,6 +120,8 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 * 트리창에서 특정한 설정 항목을 선택하면, 해당하는 설정 화면에 우측에 나타납니다.
 
 * 하단에는 각종 에러나 메시지가 기록되는 로그창이 있습니다. 로그창 우측의 `로그 클리어` 버튼을 클릭하면 로그창이 비워집니다.
+
+[__SOURCE](3-operation/3-setting.md)
 # 3.3 SafeSpace2 설정
 
 - 트리창에서 설정할 항목을 선택한 후, 우측 화면에 값을 설정하십시오.
@@ -104,6 +133,8 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 - 허용한 범위 밖의 값을 입력한 경우, 다른 화면으로 이동을 시도할 경우 이동 실패하며, 하단의 로그 창에 잘못 입력한 값과 적법한 범위가 표시됩니다. 적법한 값으로 정정한 후, 이동하십시오.
 
   ![](../_assets/ch03_40_range.PNG)
+
+[__SOURCE](3-operation/4-open-save.md)
 # 3.4 저장과 불러오기
 
 - 설정 내용을 저장하려면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 선택하십시오.
@@ -123,9 +154,13 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 
 - SafeSpace2의 설정을 디폴트 값으로 다시 시작하려면, `파일(F) - 새 파일(N)` 메뉴를 선택하면 됩니다. 혹은 툴 바에서 ![](../_assets/toolbar_new.PNG) 버튼을 클릭하십시오.
 
-  # 4. 통신
+  
+[__SOURCE](4-comm/README.md)
+# 4. 통신
 
 이번 장에서는 HRSafeSpace2를 Hi7 제어기와 연결하고, 암호를 설정하고, 설정한 내용을 다운로드하거나 업로드하는 방법에 대해 설명하겠습니다.
+
+[__SOURCE](4-comm/1-network-setting.md)
 # 4.1 네트워크 설정
 
 1. HRSafeSpace2를 실행한 PC와 Hi7 제어기의 범용 이더넷 포트를 이더넷 케이블로 연결하십시오.
@@ -145,6 +180,8 @@ HRSafeSpace2는 단독 (Stand-alone) 애플리케이션으로, 혹은 HRSpace에
 4. PC측과 로봇 제어기(Hi7) 측의 IP 주소를 각각 입력하고 `확인` 버튼을 클릭하십시오.
 
    ![](../_assets/ch04_10_ipaddr.PNG)
+
+[__SOURCE](4-comm/2-password.md)
 # 4.2 패스워드
 
 SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도록, Hi7 제어기에 반드시 SafeSpace2 패스워드를 설정해야 합니다.
@@ -191,6 +228,8 @@ SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도�
 
    ![](../_assets/msgbox_complete.PNG)
    
+
+[__SOURCE](4-comm/3-download.md)
 # 4.3 다운로드
 
 1. `도구(T) - 다운로드(D)` 메뉴를 선택합니다.
@@ -208,6 +247,8 @@ SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도�
 3. `완료` 메시지박스가 표시되면 성공한 것입니다.
 
    ![](../_assets/ch04_60_download_ok.PNG)
+
+[__SOURCE](4-comm/4-upload.md)
 # 4.4 업로드
 
 1. `도구(T) - 업로드(U)` 메뉴를 선택합니다.
@@ -220,6 +261,8 @@ SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도�
 2. `완료` 메시지박스가 표시되면 성공한 것입니다.
 
    ![](../_assets/msgbox_complete.PNG)
+
+[__SOURCE](5-hrspace/README.md)
 # 5. HRSpace4 연동
 
 이번 장에서는 HRSpace4 프로젝트에 HRSafeSpace2를 플러그인 (Plug-in) 형태로 로드하여, 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집하는 방법을 설명합니다.
@@ -244,6 +287,8 @@ HDR220-26 매니퓰레이터 한 대가 셀 안에 설치되어 있습니다. �
 전체 셀은 5면 펜스(fence)로 둘러싸여 있습니다. 또한, 천장 구조물과의 충돌을 막기 위해 로봇 툴의 Z축 범위는 셀 바닥을 기준으로 0~3400mm 영역으로 제한되며, 펜스 내부에는 기둥이 하나 존재한다고 가정합니다.
 
 우리는 HRSpace4 비주얼 편집 연동 기능의 도움을 받아 SafeSpace2 설정 파라미터를 작성한 뒤, 생성된 safety_parameter.json 파일을 실제 Hi7 로봇 컨트롤러에 다운로드하게 될 것입니다.
+
+[__SOURCE](5-hrspace/1-install-plugin.md)
 # 5.1 SafeSpace2 플러그인의 설치
 
 
@@ -261,6 +306,17 @@ HDR220-26 매니퓰레이터 한 대가 셀 안에 설치되어 있습니다. �
 2. HRSpace4가 설치된 폴더에서 Library/Etc/에 SafeSpace2/ 폴더를 생성한 후, 그 안에 파일들을 붙여넣기 합니다.
 
    ![](../_assets/ch05_15_plugin_install2.PNG)
+
+
+{% hint style="info" %}
+
+플러그인 설치 후 HRSpace4를 처음 실행할 때, 혹시 아래와 같은 대화상자가 나타난다면 구성이 완료될 때까지 잠시 기다려 주십시오.
+
+   ![](../_assets/ch05_18_plugin_install3.PNG)
+
+{% endhint %}
+
+[__SOURCE](5-hrspace/2-load-plugin.md)
 # 5.2 SafeSpace2 플러그인의 로드
 
 
@@ -279,6 +335,8 @@ HDR220-26 매니퓰레이터 한 대가 셀 안에 설치되어 있습니다. �
 4. SafeSpace2 모델의 확장 속성 대화상자로서, HRSafeSpace2 대화상자가 열렸습니다.
 
    ![](../_assets/ch05_35_ex_prop2.PNG)
+
+[__SOURCE](5-hrspace/3-open-save-in-plugin.md)
 # 5.3 SafeSpace2 플러그인에서의 파일 열기와 저장하기
 
 
@@ -304,6 +362,8 @@ spot_LH2/
 ```
 
 디폴트가 아닌 다른 파일을 불러오고 저장하고 싶다면, `파일(F) - 저장(S)` 혹은 `파일(F) - 다른 이름으로 저장(A)...` 메뉴를 사용해도 되며, 3D 뷰와의 연동은 동일하게 적용됩니다.
+
+[__SOURCE](5-hrspace/4-space-working.md)
 # 5.4 작업 공간의 설정
 
 
@@ -325,7 +385,8 @@ spot_LH2/
    ![](../_assets/ch05_50_space_gen.PNG)
 
 
-4. `영역` 탭에서 Z max를 20으로 설정하고, 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`으로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 펜스 5개의 모서리의 약간 안쪽 바닥을 차례로 클릭합니다. 작업 공간을 의미하는 연두색 다각형 평면이 표시됩니다.
+4. `영역` 탭에서 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`으로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 펜스 5개의 모서리의 약간 안쪽 바닥을 차례로 클릭합니다. 작업 공간을 의미하는 연두색 다각형 평면이 표시됩니다.
+(Z max, Z min은 자동으로 20, -20으로 설정됩니다.)
 
    ![](../_assets/ch05_53_space_area.PNG)
 
@@ -340,7 +401,7 @@ spot_LH2/
    ![](../_assets/ch05_56_space_area_adjust.PNG)
 
 
-7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. default Z 범위 설정이 20 ~ 0 mm이기 때문에, 옆에서 보면 작업 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
+7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. 현재 Z 범위가 -20~20 mm이기 때문에, 옆에서 보면 작업 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
 
    ![](../_assets/ch05_58_z.PNG)
 
@@ -350,12 +411,14 @@ spot_LH2/
    ![](../_assets/ch05_60_z2.PNG)
 
 
-9. `홈(H) - 기즈모`를 열고, 크기 조정 모드로 Z축을 드래그하여 Zmax를 조정할 수도 있습니다. (Zmin 등 다른 설정은 조정할 수 없습니다.)
+9. `홈(H) - 기즈모`를 열고, 위치 조정 혹은 크기 조정 모드로 Z축을 드래그하여, Zmax, Zmin을 조정할 수도 있습니다. (X축이나 Y축은 조정할 수 없습니다.)
 
    ![](../_assets/ch05_61_z3.PNG)
 
 
 10. 설정된 작업 공간 형상이 셀을 채우고 있어서, 다른 설정에 방해가 됩니다. `일반` 탭에서 활성화 항목을 `항상 off`로 설정하면, 작업 공간 형상이 일단 감춰집니다. 다른 설정을 모두 완료한 후 다시 `항상 on`으로 바꾸도록 합시다.
+
+[__SOURCE](5-hrspace/5-space-protective.md)
 # 5.5 보호 공간의 설정
 
 
@@ -371,7 +434,7 @@ spot_LH2/
    ![](../_assets/ch05_62_ps01.PNG)
 
 
-3. `영역` 탭에서 Z max를 20으로 설정하고, 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 인간 작업자 주변의 바닥 4개의 지점을 차례로 클릭합니다. 보호 공간을 의미하는 빨간색 다각형 평면이 표시됩니다.
+3. `영역` 탭에서 우측의 `입력 시작` 버튼을 클릭합니다. (버튼은 `입력 완료`로 바뀝니다.) 이제 마우스 좌버튼으로 3D 뷰에서 인간 작업자 주변의 바닥 4개의 지점을 차례로 클릭합니다. 보호 공간을 의미하는 빨간색 다각형 평면이 표시됩니다. (Z max, Z min은 자동으로 20, -20으로 설정됩니다.)
 
    ![](../_assets/ch05_62_ps05.PNG)
 
@@ -384,7 +447,7 @@ spot_LH2/
    ![](../_assets/ch05_62_ps10.PNG)
 
 
-7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. default Z 범위 설정이 20 ~ 0 mm이기 때문에, 옆에서 보면 보호 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
+7. 이제 뷰를 회전시켜서 옆에서 확인해 봅시다. 현재 Z 범위가 -20~20 mm이기 때문에, 옆에서 보면 보호 공간은 로봇 바닥 높이로 납작하게 형성되어 있습니다.
 
    ![](../_assets/ch05_62_ps15.PNG)
 
@@ -392,6 +455,8 @@ spot_LH2/
 8. 로봇 바닥 높이가 800mm 이므로, 보호 공간의 높이를 3000mm로 한다면 Zmin~Zmax를 -800~2200mm 범위로 설정하면 됩니다. 값 입력 후, 확장 속성(HRSafeSpace)의 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 아래와 같이 설정이 완료됩니다.
 
    ![](../_assets/ch05_62_ps20.PNG)
+
+[__SOURCE](5-hrspace/6-robot-link.md)
 # 5.6 로봇 링크의 설정
 
 로봇의 upper_frame과 arm_frame에 캡슐 영역을 씌워서, 충돌을 예방할 수 있습니다. 
@@ -420,6 +485,8 @@ spot_LH2/
 
    ![](../_assets/ch05_68_link_gizmo3.PNG)
 
+
+[__SOURCE](5-hrspace/7-tool.md)
 # 5.7 툴의 설정
 
 로봇의 툴에 다양한 형상의 영역을 씌워서, 충돌을 예방할 수 있습니다. 
@@ -453,6 +520,8 @@ spot_LH2/
    * 나머지 항목은 0
 
    ![](../_assets/ch05_74_tool_tool3.PNG)
+
+[__SOURCE](5-hrspace/8-tool-orient.md)
 # 5.8 툴 방향의 설정
 
 로봇의 툴이 가리키는 방향을 특정한 각도 범위로 제한하고 싶다면, 툴 방향 (tool_orients) 설정 항목을 사용할 수 있습니다.
@@ -489,16 +558,22 @@ spot_LH2/
 
 
 3. 툴 방향의 범위 크기나 방향의 수치를 수정한 후 다시 ![](../_assets/toolbar_save.PNG) 버튼을 클릭하면, 3D 뷰에도 반영됩니다.
+
+[__SOURCE](appendices/README.md)
 # 별첨
 
   
 
 
+
+[__SOURCE](appendices/rules-occupational-safety.md)
 # 산업안전보건기준에 관한 규칙 및 안전검사 고시
 
 당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
 
 "[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
+
+[__SOURCE](quality-assurance.md)
 # 품질보증
 
-"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
+"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"
