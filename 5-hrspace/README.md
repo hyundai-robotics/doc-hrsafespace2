@@ -3,15 +3,6 @@
 
 This chapter explains how to load HRSafeSpace2 as a plug-in in an HRSpace4 project and visually edit the safety layout within a 3D virtual workspace.
 
-{% hint style="info" %}
-If HRSpace4 is not installed, visit the [HD Hyundai Robotics Download Center](https://www.hd-hyundairobotics.com/en/download-center/list) and search for HRSpace to download and install the latest version.
-{% endhint %}
-
-{% hint style="warning" %}
-HRSpace version 4.3.2.0 or higher is required.
-{% endhint %}
-
-
 Assume that a robot spot-welding cell layout has been designed in HRSpace4 as shown below:
 
    ![](../_assets/ch05_00_hrspace4.PNG)

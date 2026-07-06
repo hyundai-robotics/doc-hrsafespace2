@@ -19,7 +19,7 @@
   * [4.3 Download](4-comm/3-download.md)
   * [4.4 Upload](4-comm/4-upload.md)
 * [5. HRSpace4 Integration](5-hrspace/README.md)
-  * [5.1 Installing the SafeSpace2 Plug-in](5-hrspace/1-install-plugin.md)
+  * [5.1 Installing the HRSpace4](5-hrspace/1-install-hrspace.md)
   * [5.2 Loading the SafeSpace2 Plug-in](5-hrspace/2-load-plugin.md)
   * [5.3 Opening and Saving Files in the SafeSpace2 Plug-in](5-hrspace/3-open-save-in-plugin.md)
   * [5.4 Configuring the Working Space](5-hrspace/4-space-working.md)

@@ -277,15 +277,6 @@ To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to
 
 This chapter explains how to load HRSafeSpace2 as a plug-in in an HRSpace4 project and visually edit the safety layout within a 3D virtual workspace.
 
-{% hint style="info" %}
-If HRSpace4 is not installed, visit the [HD Hyundai Robotics Download Center](https://www.hd-hyundairobotics.com/en/download-center/list) and search for HRSpace to download and install the latest version.
-{% endhint %}
-
-{% hint style="warning" %}
-HRSpace version 4.3.2.0 or higher is required.
-{% endhint %}
-
-
 Assume that a robot spot-welding cell layout has been designed in HRSpace4 as shown below:
 
    ![](../_assets/ch05_00_hrspace4.PNG)
@@ -301,34 +292,15 @@ Additionally, assume there is one column (pillar) inside the fenced area.
 
 Using HRSpace4's visual editing integration, we will generate SafeSpace2 configuration parameters and then download the resulting safety_parameter.json file to the actual Hi7 robot controller.
 
-[__SOURCE](5-hrspace/1-install-plugin.md)
-# 5.1 Installing the SafeSpace2 Plug-in
+[__SOURCE](5-hrspace/1-install-hrspace.md)
+# 5.1 Installing the HRSpace4
 
 
-1. Copy the following five files from the folder where HRSafeSpace2 is installed:
-
-   * favicon.ico
-   * MxSafeSpace2.en.dll
-   * MxSafeSpace2.ko.dll
-   * SafeSpace2_en.hrsj
-   * SafeSpace2_ko.hrsj
-
-   ![](../_assets/ch05_10_plugin_install.PNG)
+If HRSpace4 is not installed, visit the [HD Hyundai Robotics Download Center](https://www.hd-hyundairobotics.com/en/download-center/list) and search for HRSpace to download and install the latest version.
 
 
-2. In the folder where HRSpace4 is installed, create a folder
-`SafeSpace2/` on the `Library/Etc/` folder, and paste the copied files into this folder.
-
-   ![](../_assets/ch05_15_plugin_install2.PNG)
-
-
-{% hint style="info" %}
-
-When launching HRSpace4 for the first time after installing the plug-in, the following dialog may appear.
-Please wait until the configuration is complete.
-
-   ![](../_assets/ch05_18_plugin_install3.PNG)
-
+{% hint style="warning" %}
+HRSpace version 4.7.1.0 or higher is required.
 {% endhint %}
 
 [__SOURCE](5-hrspace/2-load-plugin.md)
