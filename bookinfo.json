@@ -1,8 +1,13 @@
 ﻿{
     "langCode": "en",
-    "series": "Hyundai Robot Hi7 Controller",
+    "series": "Hi7 Controller",
     "title": "Function Manual - HRSafeSpace2",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Table of Contents",
-    "tocTitleElements": "[ \"h1\", \"h2\" ]"
+    "tocTitleElements": "[ \"h1\", \"h2\" ]",
+    "docId": "HI7HRSAFESPACE2_EN_001",
+    "references": [
+        { "title" : "Operation Manual - TP630", "id" : "${cont_model:upper}OPTP630_EN_001" },
+        { "title" : "Function Manual - SafeSpace 2.0", "id" : "HI7SAFESPACE2_EN_001" }
+    ]
 }

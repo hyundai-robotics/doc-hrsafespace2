@@ -1,6 +1,9 @@
 ﻿# Table of contents
 
 * [Hi7 Robot Controller Function Manual - HRSafeSpace2](README.md)
+* [About the Manual](0-about-this-manual/README.md)
+  * [Precautions](0-about-this-manual/precautions.md)
+  * [Safety Cautions](0-about-this-manual/safety-notice.md)
 * [1. Preface](1-preface/README.md)
   * [1.1 Introduction](1-preface/1-intro.md)
   * [1.2 Prerequisite](1-preface/2-prerequisite.md)

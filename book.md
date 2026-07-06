@@ -1,21 +1,33 @@
-﻿# Hi7 Robot Controller Function Manual - HRSafeSpace2
+﻿
+[__SOURCE](README.md)
+# Hi7 Robot Controller Function Manual - HRSafeSpace2
+
+{% endhint %}
+
+[__SOURCE](0-about-this-manual/README.md)
+# About the Manual
+
+[__SOURCE](0-about-this-manual/precautions.md)
+# Precautions
+
+{% include file="en/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# Safety Cautions
+
+{% include file="en/safety-notice.md" %}
 
 {% hint style="warning" %}
-The information presented in this manual is the property of HD Hyundai Robotics.
-
-The manual may neither be copied, in part or in full, nor redistributed without prior written consent from HD Hyundai Robotics.
-
-It may neither be provided to any third party nor used for any other purposes.
-
-
-HD Hyundai Robotics reserves the right to modify this document without prior notification.
-
-
-**Copyright ⓒ 2025 by HD Hyundai Robotics**
+- Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
+- Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
 {% endhint %}
+
+[__SOURCE](1-preface/README.md)
 # 1. Preface
 
 This document describes how to use HRSafeSpace2, the PC-based configuration utility for the SafeSpace 2.0 feature of the HD Hyundai Robotics Hi7 controller.
+
+[__SOURCE](1-preface/1-intro.md)
 # 1.1 Introduction
 
 
@@ -38,6 +50,8 @@ This manual does not describe the individual configuration screens. Instead, it 
 
 For detailed information on each configuration screen, please refer to the
 [SafeSpace 2.0 Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/english/README).
+
+[__SOURCE](1-preface/2-prerequisite.md)
 # 1.2 Prerequisite
 
 
@@ -48,7 +62,9 @@ This manual is intended for users who are already familiar with the following ma
   * [SafeSpace 2.0 Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/english/README) : You may read this manual first if preferred.
 
   * HRSpace4 Function Manual (HRSpace4 Help) : Required only when using HRSafeSpace2 in conjunction with HRSpace4.
-  # 2. Installation
+  
+[__SOURCE](2-install/README.md)
+# 2. Installation
 
 - Required Environment
   * Windows 10 64-bit or later
@@ -69,6 +85,8 @@ This manual is intended for users who are already familiar with the following ma
 4. When the Complete screen appears, click `Close` to finish the installation.. 
    
 	![](../_assets/ch01_14_install.PNG)
+
+[__SOURCE](3-operation/README.md)
 # 3. Operation
 
 
@@ -78,6 +96,8 @@ Chapters 3 and 4 describe the operation based on the stand-alone application.
 The same procedures apply similarly when running it as a plug-in.
 
 This chapter explains how to launch HRSafeSpace2, its screen layout, and how to load and save configuration files.
+
+[__SOURCE](3-operation/1-start.md)
 # 3.1 How to Launch the Application
 
 
@@ -98,7 +118,9 @@ If the application fails to start, install the following file and try again:
 C:/Program Files/HHI Robotics/HRSafeSpace2/vc_redist.x64.exe
 ```
 
-{% endhint %}# 3.2 Screen Layout
+{% endhint %}
+[__SOURCE](3-operation/2-screen-layout.md)
+# 3.2 Screen Layout
 
 
 ![](../_assets/ch03_20_hrsafespace2.PNG)
@@ -111,6 +133,8 @@ C:/Program Files/HHI Robotics/HRSafeSpace2/vc_redist.x64.exe
 
 * At the bottom, the log window displays various errors and messages.
 Clicking the `clear log` button on the right side of the log window clears the log entries.
+
+[__SOURCE](3-operation/3-setting.md)
 # 3.3 Configuring SafeSpace2
 
 
@@ -125,6 +149,8 @@ Clicking the `clear log` button on the right side of the log window clears the l
   Correct the value to fall within the valid range before switching screens.
 
   ![](../_assets/ch03_40_range.PNG)
+
+[__SOURCE](3-operation/4-open-save.md)
 # 3.4 Saving and Loading
 
 
@@ -144,10 +170,14 @@ Configuration files are saved in `.json` format.
 - Selecting the saved file will load the configuration into the application.
 
 - To reset SafeSpace2 settings to their default values, select `File - New` from the menu, or click the ![](../_assets/toolbar_new.PNG) button on the toolbar:
+
+[__SOURCE](4-comm/README.md)
 # 4. Communication
 
 
 This chapter explains how to connect HRSafeSpace2 to the Hi7 controller, set a password, and download or upload the configured settings.
+
+[__SOURCE](4-comm/1-network-setting.md)
 # 4.1 Network Configuration
 
 
@@ -164,6 +194,8 @@ This chapter explains how to connect HRSafeSpace2 to the Hi7 controller, set a p
    Alternatively, click the ![](../_assets/toolbar_ipaddr.PNG) button on the toolbar:
 
 4. Enter the IP addresses for both the PC and the Hi7 controller, then click `OK`.
+
+[__SOURCE](4-comm/2-password.md)
 # 4.2 Password
 
 
@@ -206,6 +238,8 @@ To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to
 3. If the `Complete` message box appears, the password has been successfully changed.
 
    ![](../_assets/msgbox_complete.PNG)
+
+[__SOURCE](4-comm/3-download.md)
 # 4.3 Download
 
 
@@ -222,6 +256,8 @@ To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to
 3. If the `Complete` message box appears, the download was successful.
 
    ![](../_assets/ch04_60_download_ok.PNG)
+
+[__SOURCE](4-comm/4-upload.md)
 # 4.4 Upload
 
 1. Select `Tools - Upload` from the menu.
@@ -234,7 +270,9 @@ To prevent unauthorized modifications to SafeSpace2 settings, it is mandatory to
 2. If the `Complete` message box appears, the upload was successful.
 
    ![](../_assets/msgbox_complete.PNG)
-   # 5. HRSpace4 Integration
+   
+[__SOURCE](5-hrspace/README.md)
+# 5. HRSpace4 Integration
 
 
 This chapter explains how to load HRSafeSpace2 as a plug-in in an HRSpace4 project and visually edit the safety layout within a 3D virtual workspace.
@@ -262,6 +300,8 @@ To prevent collisions with the ceiling structure, the robot tool’s Z-axis rang
 Additionally, assume there is one column (pillar) inside the fenced area.
 
 Using HRSpace4's visual editing integration, we will generate SafeSpace2 configuration parameters and then download the resulting safety_parameter.json file to the actual Hi7 robot controller.
+
+[__SOURCE](5-hrspace/1-install-plugin.md)
 # 5.1 Installing the SafeSpace2 Plug-in
 
 
@@ -290,6 +330,8 @@ Please wait until the configuration is complete.
    ![](../_assets/ch05_18_plugin_install3.PNG)
 
 {% endhint %}
+
+[__SOURCE](5-hrspace/2-load-plugin.md)
 # 5.2 Loading the SafeSpace2 Plug-in
 
 
@@ -308,6 +350,8 @@ Please wait until the configuration is complete.
 4. The Extension properties dialog for the SafeSpace2 model will open, which is the HRSafeSpace2 interface.
 
    ![](../_assets/ch05_35_ex_prop2.PNG)
+
+[__SOURCE](5-hrspace/3-open-save-in-plugin.md)
 # 5.3 Opening and Saving Files in the SafeSpace2 Plug-in
 
 
@@ -334,6 +378,8 @@ spot_LH2/
 
 If you wish to load or save a file other than the default, you can use `File - Save` or `File - Save As...`.
 Integration with the 3D view works in the same way regardless of the file chosen.
+
+[__SOURCE](5-hrspace/4-space-working.md)
 # 5.4 Configuring the Working Space
 
 
@@ -398,6 +444,8 @@ After entering the values, click the ![](../_assets/toolbar_save.PNG) button to 
 10. Since the configured working space occupies the entire cell, it may obstruct other settings.
 On the `General` tab, set Activation to `Always Off` to temporarily hide the working space shape.
 After completing other settings, switch it back to `Always On`.
+
+[__SOURCE](5-hrspace/5-space-protective.md)
 # 5.5 Configuring the Protective Space
 
 
@@ -444,6 +492,8 @@ Click the (![](../_assets/toolbar_save.PNG)) button to apply the changes to the 
 7. Since the robot base height is 800 mm, if the protective space height is set to 3000 mm, set Zmin–Zmax to -800–2200 mm. After entering the values, click the ![](../_assets/toolbar_save.PNG) button to finalize the configuration.
 
    ![](../_assets/ch05_62_ps20.PNG)
+
+[__SOURCE](5-hrspace/6-robot-link.md)
 # 5.6 Configuring Robot Links
 
 You can apply capsule volumes to the robot's upper_frame and arm_frame to prevent collisions.
@@ -474,6 +524,8 @@ You can apply capsule volumes to the robot's upper_frame and arm_frame to preven
    Changes made with the gizmo are immediately reflected in the Extension Properties dialog.
 
    ![](../_assets/ch05_68_link_gizmo3.PNG)
+
+[__SOURCE](5-hrspace/7-tool.md)
 # 5.7 Configuring the Tool
 
 
@@ -510,6 +562,8 @@ Create Model 1 as a capsule and use the gizmo to cover the protruding areas.
    * Radius: 200 mm
    * Height: 500 mm
    * Other parameters: 0
+
+[__SOURCE](5-hrspace/8-tool-orient.md)
 # 5.8 Configuring Tool Orientation
 
 
@@ -549,16 +603,22 @@ If you want to limit the direction that the robot tool points within a specific 
 
 
 3. After modifying the angular range or direction values, click the ![](../_assets/toolbar_save.PNG) button again to apply the changes to the 3D view.
+
+[__SOURCE](appendices/README.md)
 # Appendices
 
   
 
 
+
+[__SOURCE](appendices/rules-occupational-safety.md)
 # Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
 
 The industrial robot should be installed in consideration of the inspection standards, both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection (if subject to inspection).
 
 "[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
+
+[__SOURCE](quality-assurance.md)
 # Quality Assurance
 
-"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/english/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
