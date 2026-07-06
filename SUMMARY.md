@@ -1,6 +1,9 @@
 ﻿# Table of contents
 
 * [Hi7 로봇제어기 기능설명서 - HRSafeSpace2](README.md)
+* [이 설명서에 대하여](0-about-this-manual/README.md)
+  * [사전 주의사항](0-about-this-manual/precautions.md)
+  * [안전 주의 사항](0-about-this-manual/safety-notice.md)
 * [1. 개요](1-preface/README.md)
   * [1.1 소개](1-preface/1-intro.md)
   * [1.2 사전 지식 (prerequisite)](1-preface/2-prerequisite.md)
