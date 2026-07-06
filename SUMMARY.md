@@ -19,7 +19,7 @@
   * [4.3 다운로드](4-comm/3-download.md)
   * [4.4 업로드](4-comm/4-upload.md)
 * [5. HRSpace4 연동](5-hrspace/README.md)
-  * [5.1 SafeSpace2 플러그인의 설치](5-hrspace/1-install-plugin.md)
+  * [5.1 HRSpace4의 설치](5-hrspace/1-install-hrspace.md)
   * [5.2 SafeSpace2 플러그인의 로드](5-hrspace/2-load-plugin.md)
   * [5.3 SafeSpace2 플러그인에서의 파일 열기와 저장하기](5-hrspace/3-open-save-in-plugin.md)
   * [5.4 작업 공간의 설정](5-hrspace/4-space-working.md)

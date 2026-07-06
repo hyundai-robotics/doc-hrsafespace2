@@ -2,17 +2,6 @@
 
 이번 장에서는 HRSpace4 프로젝트에 HRSafeSpace2를 플러그인 (Plug-in) 형태로 로드하여, 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집하는 방법을 설명합니다.
 
-{% hint style="info" %}
-
-HRSpace4가 설치되어 있지 않다면, [HD현대로보틱스 다운로드 페이지](https://www.hd-hyundairobotics.com/download-center/list)에 접속하여 제품명에서 HRSpace를 검색하여 최신 버전을 다운로드 받아 설치하십시오.
-
-{% endhint %}
-
-{% hint style="warning" %}
-HRSpace v4.3.2.0 이상이 필요합니다.
-{% endhint %}
-
-
 HRSpace4에서 아래와 같은 로봇 스폿 용접 셀의 레이아웃을 설계했다고 가정합시다.
 
    ![](../_assets/ch05_00_hrspace4.PNG)

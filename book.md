@@ -267,17 +267,6 @@ SafeSpace2 설정을 권한이 없는 사람이 함부로 수정할 수 없도�
 
 이번 장에서는 HRSpace4 프로젝트에 HRSafeSpace2를 플러그인 (Plug-in) 형태로 로드하여, 3D 가상 워크스페이스에서 Safety 레이아웃을 비주얼하게 편집하는 방법을 설명합니다.
 
-{% hint style="info" %}
-
-HRSpace4가 설치되어 있지 않다면, [HD현대로보틱스 다운로드 페이지](https://www.hd-hyundairobotics.com/download-center/list)에 접속하여 제품명에서 HRSpace를 검색하여 최신 버전을 다운로드 받아 설치하십시오.
-
-{% endhint %}
-
-{% hint style="warning" %}
-HRSpace v4.3.2.0 이상이 필요합니다.
-{% endhint %}
-
-
 HRSpace4에서 아래와 같은 로봇 스폿 용접 셀의 레이아웃을 설계했다고 가정합시다.
 
    ![](../_assets/ch05_00_hrspace4.PNG)
@@ -288,32 +277,15 @@ HDR220-26 매니퓰레이터 한 대가 셀 안에 설치되어 있습니다. �
 
 우리는 HRSpace4 비주얼 편집 연동 기능의 도움을 받아 SafeSpace2 설정 파라미터를 작성한 뒤, 생성된 safety_parameter.json 파일을 실제 Hi7 로봇 컨트롤러에 다운로드하게 될 것입니다.
 
-[__SOURCE](5-hrspace/1-install-plugin.md)
-# 5.1 SafeSpace2 플러그인의 설치
+[__SOURCE](5-hrspace/1-install-hrspace.md)
+# 5.1 HRSpace4의 설치
 
 
-1. HRSafeSpace2가 설치된 폴더에서 아래 5개의 파일을 클립보드로 복사합니다.
-
-   * favicon.ico
-   * SafeSpace2.en.dll
-   * SafeSpace2.ko.dll
-   * SafeSpace2_en.hrsj
-   * SafeSpace2_ko.hrsj
-
-   ![](../_assets/ch05_10_plugin_install.PNG)
+HRSpace4가 설치되어 있지 않다면, [HD현대로보틱스 다운로드 페이지](https://www.hd-hyundairobotics.com/download-center/list)에 접속하여 제품명에서 HRSpace를 검색하여 최신 버전을 다운로드 받아 설치하십시오.
 
 
-2. HRSpace4가 설치된 폴더에서 Library/Etc/에 SafeSpace2/ 폴더를 생성한 후, 그 안에 파일들을 붙여넣기 합니다.
-
-   ![](../_assets/ch05_15_plugin_install2.PNG)
-
-
-{% hint style="info" %}
-
-플러그인 설치 후 HRSpace4를 처음 실행할 때, 혹시 아래와 같은 대화상자가 나타난다면 구성이 완료될 때까지 잠시 기다려 주십시오.
-
-   ![](../_assets/ch05_18_plugin_install3.PNG)
-
+{% hint style="warning" %}
+HRSpace v4.7.1.0 이상이 필요합니다.
 {% endhint %}
 
 [__SOURCE](5-hrspace/2-load-plugin.md)
